@@ -1,0 +1,163 @@
+/* Variables */
+/* A2025 | TIM 3e Cycle | Collège de Maisonneuve */
+/* EL */
+
+/***************************/
+/* Couleurs */
+/***************************/
+
+:root{
+  /* Header */
+  --header-couleur-background: #BD7653;
+
+    /* Nav */
+    --nav-couleur-background: #BD7653;
+    --nav-couleur-tapis:#9B0000;
+      --nav-couleur-element:#F9CC57;
+      --nav-couleur-element-hover:#DCB44C;
+      --nav-couleur-element-selected:#BC9B43;
+    /* Recherche */
+    --recherche-couleur-background:#FFFFFF;
+
+  /* Footer */
+  --footer-couleur-background: #BD7653;
+
+  /* Boutons */
+  --boutons-couleur-background: #F9CC57;
+    --boutons-couleur-hover-background: #DCB44C;
+
+  --burger-couleur: #000000;
+    --burger-couleur-hover: #FFFFFF;
+
+  /* Plaques de texte */
+  --plaquesTexte-couleur-background: #F9CC57;
+  --plaquesTexte-zoneTexte-couleur-background: #ffe39c;
+
+  /* Hover images (Page Informations) */
+  --imageExpoTIM-couleur-border: #000000; 
+  /* Semi-transparent qui apparait devant l'image au hover */
+  --imageExpoTIM-couleur-hover-background: #000000;
+
+  /* Textes */
+  --texte-couleur-principal: #000000;
+    --texte-couleur-alternatif: #FFFFFF;
+  --texte-couleur-secondaire: #000000;
+  --texte-couleur-titre-principal: #000000;
+  --texte-couleur-sous-titre-principal: #000000;
+
+  /* Général | Défault, etc. */
+  --couleur-background-principal: #000000; 
+}
+
+/***************************/
+
+@font-face{
+  font-family: "Pixelmax";
+  src:url(./fonts/pixelmax/Pixelmax-Regular.otf) format("opentype");
+}
+
+@font-face{
+  font-family: "Upheaval";
+  src:url(./fonts/upheaval/upheavtt.ttf) format("truetype");
+}
+
+@font-face{
+  font-family: "Alte Haas Grotesk Bold";
+  src:url(./fonts/alte-haas-grotesk-bold/AlteHaasGroteskBold.ttf) format("truetype");
+}
+
+@font-face{
+  font-family: "Alte Haas Grotesk Regular";
+  src:url(./fonts/alte-haas-grotesk-reg/AlteHaasGroteskRegular.ttf) format("truetype");
+}
+
+/***************************/
+/* Textes */
+/***************************/
+
+:root{
+
+    /* Fonts */
+  --texte-font-titre: "Pixelmax", sans-serif;
+  --texte-font-principal: "Upheaval", sans-serif;
+  --texte-font-secondaire: "Alte Haas Grotesk Regular", sans-serif;
+
+  /* Tailles texte mobile */
+  --texte-mobile-taille-titre: 32px;
+  --texte-mobile-taille-sous-titre: 20px;
+  --texte-mobile-taille-principal: 16px;
+  --texte-mobile-taille-petit: 10px;
+
+  /* Tailles texte desktop */
+  --texte-desktop-taille-titre: 50px;
+  --texte-desktop-taille-sous-titre: 32px;
+  --texte-desktop-taille-principal: 20px;
+  --texte-desktop-taille-petit: 12px;
+
+  /* Poids */
+  --texte-poids-titre: Bolder;
+  --texte-poids-sous-titre: Bold;
+  --texte-poids-principal: normal;
+  --texte-poids-secondaire: lighter;
+}
+
+/***************************/
+/* Tailles */
+/***************************/
+
+:root{
+
+  /* Header */
+  --header-hauteur: 250px;
+  --header-largeur: 100%;
+
+    /* Nav */
+    --nav-hauteur: 98%;
+    --nav-largeur: 98%; 
+
+  /* Footer */
+  --footer-largeur: 100%;
+  --footer-hauteur: 403px;
+  --mediaSociaux-icone-largeur:60px;
+  --mediaSociaux-icone-hauteur:60px;
+
+  /* Plaque créateur */
+  --plaqueCreateur-largeur: 571px;
+  --plaqueCreateur-hauteur: 280px;
+
+  --plaqueCreateur-image-largeur: 171px;
+  --plaqueCreateur-image-hauteur: 244px;
+
+  --plaqueCreateur-nom-largeur: 342px;
+  --plaqueCreateur-nom-hauteur: 75px;
+  --plaqueCreateur-zoneTexte-largeur: 342px;
+  --plaqueCreateur-zoneTexte-hauteur: 154px;
+  
+
+  /* Images de projet */
+  --img1ereAnnee-desktop-hauteur:305px;
+  --img1ereAnnee-desktop-largeur:242px;
+  --img2eAnnee-desktop-hauteur:305px;
+  --img2eAnnee-desktop-largeur:242px;
+  --img3eAnnee-desktop-hauteur:305px;
+  --img3eAnnee-desktop-largeur:242px;
+
+  --img1ereAnnee-mobile-hauteur:294px;
+  --img1ereAnnee-mobile-largeur:314px;
+  --img2eAnnee-mobile-hauteur:294px;
+  --img2eAnnee-mobile-largeur:314px;
+  --img3eAnnee-mobile-hauteur:294px;
+  --img3eAnnee-mobile-largeur:314px;
+
+
+  /* Général */
+  --texte-padding: 5px;
+
+}
+
+/***************************/
+
+/***************************/
+/*  */
+/***************************/
+
