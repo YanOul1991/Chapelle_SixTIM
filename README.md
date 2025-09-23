@@ -6,6 +6,7 @@
 > ### [Dépôt Github](https://github.com/YanOul1991/Chapelle_SixTIM)
 > ### [Github Project](https://github.com/users/YanOul1991/projects/3)
 > ### [WordPress](https://gftnth00.mywhc.ca/5w5_09/)
+> ### [Wordpress Admin] (https://gftnth00.mywhc.ca/5w5_09/wp-admin/about.php)
 
 <br>
 
