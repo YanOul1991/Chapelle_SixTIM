@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<main>
+<main class="accueil">
   <div class="accueil-intro">
     <img src="https://placehold.co/600x400" alt="Image logo">
     <h1 class="home-main-title">ExpoTIM</h1>
@@ -8,29 +8,10 @@
     <p class="home-main-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam maiores nostrum, molestiae sit quibusdam cupiditate in non eius qui suscipit laborum, provident totam expedita nisi?</p>
   </section>
 
-
-  <?php
-  # Premiere section liens vers tout les projets
+  <?php   # Loop pour chacune des categories, titre plus description.
+          # Tout la section et un lien cliquable vers la categorie choisie
   
-  $link = get_page_by_path('projects'); ?>
-
-  <section class="accueil-projets">
-    <a class="accueil-projets-click" href="<?php echo get_permalink($link->ID) ?>">
-      <div class="accueil-projets-visuel">
-        <img src="https://placehold.co/600x400" alt="Visuel tout les projets">
-      </div>
-      <div class="accueil-projets-description">
-        <h1 class="accueil-projets-description-titre">Tout les projets</h1>
-        <h3 class="accueil-projets-description-paragraphe">Voir tout les projets</h3>
-      </div>
-    </a>
-  </section> 
-
-  <?php
-
-  # Loop pour chacune des categories, titre plus description.
-  # Tout la section et un lien cliquable vers la categorie choisie
-
+  
   $categories = get_categories();
   foreach ($categories as $cat) : ?>
     <section class="accueil-projets">
