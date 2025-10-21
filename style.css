@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/*
+Theme Name: ChapelleSixTheme
+Author: ChapelleSixTIM
+Author URI: https://github.com/YanOul1991/Chapelle_SixTIM
+Description: Thème pour le projet web 5W5
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ChapelleSixTheme
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ================================================ */
+
+/* Generiques */
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: black;
+}
+
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+
+  min-height: 100vh;
+}
+
+main{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  flex: 1 1 auto;
+
+  border: 2px dashed cyan;
+}
+
+/* ================================================ */
+
+header{
+  /* DEBUG - TO REMOVE */ border: 2px dashed lime;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  flex: 0 0 auto;
+}
+
+div.main-logo {
+  width: 125px;
+}
+
+a.custom-logo-link{
+  width: 100%;
+  height: fit-content;
+}
+
+img.custom-logo {
+  width: 100%;
+  height: auto;
+}
+
+ul.header-menu-list{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+}
+
+li.menu-item{
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: normal;
+}
+
+li.menu-item:hover a{
+  color: #1358be;
+}
+
+footer{
+  height: 200px;
+  border: 2px dashed red;
+  flex: 1 0 auto;
+}
+
+/* ================= Project gallery ================= */
+
+div.project-gallery{
+  width: 70vw;
+  padding: 10px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+
+  gap: 50px;
+}
+
+h2.project-gallery-title{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+ul.project-gallery-list{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+li.project-gallery-list-item{
+  border: 1px dashed purple;
+
+  width: 30%;
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1.project-gallery-list-item-title{
+  font-size: 1.5rem;
+  text-align: center;
+}
