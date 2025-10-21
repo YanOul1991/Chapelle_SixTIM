@@ -112,11 +112,6 @@ li.menu-item:hover a{
   color: #1358be;
 }
 
-footer{
-  height: 200px;
-  border: 2px dashed red;
-  flex: 1 0 auto;
-}
 
 /* ================= Project gallery ================= */
 
@@ -171,3 +166,87 @@ main.accueil {
   flex-flow: column nowrap;
 
 }
+
+
+
+/* ==================== PARTIE FOOTER ==================== */
+
+section#footer_complet {
+  border: 2px dashed orange;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section#footer_navs {
+  border: 2px dashed yellow;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+section#footer_central {
+  border: 2px dashed yellow;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 50px;
+}
+
+section#footer_logo_contenant {
+  border: 2px dashed yellow;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+section#footer_social_contenant {
+  border: 2px dashed yellow;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+section#footer_legal_contenant {
+  border: 2px dashed yellow;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+section#footer_a_propos {
+  border: 2px dashed orange;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+
+
+
