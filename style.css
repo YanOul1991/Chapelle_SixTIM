@@ -167,11 +167,22 @@ main.accueil {
 
 }
 
+/* ==================== PARTIE HEADER ==================== */
+.header-menu-list{
+  font-size:Clamp(8px, 1.5vw, 16px);
+}
 
 
 /* ==================== PARTIE FOOTER ==================== */
 
+
+section#footer_complet > * {
+  width: 25%;
+}
+
 section#footer_complet {
+
+  font-size:Clamp(4px, 1.5vw, 8px);
   border: 2px dashed orange;
 
   display: flex;
@@ -182,6 +193,7 @@ section#footer_complet {
 
 section#footer_navs {
   border: 2px dashed yellow;
+  height:75%;
 
   display: flex;
   flex-flow: column nowrap;
@@ -191,7 +203,7 @@ section#footer_navs {
   gap: 10px;
 }
 
-section#footer_central {
+.footer-menu-container > #menu-nav-1 {
   border: 2px dashed yellow;
 
   display: flex;
@@ -199,18 +211,38 @@ section#footer_central {
   justify-content: center;
   align-items: center;
 
-  gap: 50px;
+  gap: 5px;
+}
+
+
+section#footer_central {
+  width:30%;
+  border: 2px dashed yellow;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
 }
 
 section#footer_logo_contenant {
   border: 2px dashed yellow;
 
+  width:75%;
+  height:100%;
+
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 
   gap: 10px;
+}
+
+.footer_logo{
+  width:100%;
+  height:auto;
 }
 
 section#footer_social_contenant {
