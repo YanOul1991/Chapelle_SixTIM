@@ -18,5 +18,5 @@
         <?php the_custom_logo(); ?>
       </div>
     <?php endif;
-    get_nav('header'); ?>
+    get_nav('footer'); ?>
   </header>
