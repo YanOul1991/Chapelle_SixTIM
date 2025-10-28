@@ -1,7 +1,7 @@
 <?php
 
 // DEBUG MODE
-define('DEBUG', false);
+define('DEBUG', true);
 
 add_filter('show_admin_bar', DEBUG ? '__return_true' : '__return_false');
 
