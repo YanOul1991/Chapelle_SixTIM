@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <main>
+  <div class="globalProjet">
   <?php get_caller(); ?>
   <?php if (have_posts()) : the_post(); ?>
     <h1 class="single-project-titre"><?php print_r(get_field('projet_nom')); ?></h1>
@@ -18,6 +19,7 @@
     <?php endwhile; endif; wp_reset_postdata(); ?>
     <p class="single-project-description"><?php print_r(get_field('projet_description')) ?></p>
   <?php endif; ?>
+  </div>
 </main>
 <?php wp_footer();
 get_footer(); ?>
