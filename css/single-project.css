@@ -2,6 +2,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
+  background-color: var(--couleur-background-principal);
 
   display: flex;
   flex-flow: column nowrap;
@@ -17,6 +18,7 @@
   text-transform: uppercase;
   font-size: var(--texte-mobile-taille-titre);
   order: -1;
+  font-family: var(--texte-font-principal);
 }
 
 .single-project-type{
@@ -37,8 +39,8 @@
 
 .single-project-texte-item{
   font-size: var(--texte-mobile-taille-principal);
-  background: #A66F16;
-  color: var(--texte-couleur-alternatif);
+  background-color: #DEDEDE;
+  color: var( --texte-couleur-principal);
   padding: 10px;
 }
 
