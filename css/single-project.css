@@ -18,7 +18,6 @@
   text-transform: uppercase;
   font-size: var(--texte-mobile-taille-titre);
   order: -1;
-  font-family: var(--texte-font-principal);
 }
 
 .single-project-type{
@@ -26,7 +25,7 @@
   font-size: var(--texte-mobile-taille-titre);
   order: -1;
 }
-
+  
 .single-project-membres{
   order: -1;
   font-size: var(--texte-mobile-taille-principal);
@@ -39,6 +38,7 @@
 
 .single-project-texte-item{
   font-size: var(--texte-mobile-taille-principal);
+  font-family: var(--texte-font-principal);
   background-color: #DEDEDE;
   color: var( --texte-couleur-principal);
   padding: 10px;
