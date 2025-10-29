@@ -2,9 +2,9 @@
 <main class="accueil">
   <div class="accueil-intro">
     <img src="https://placehold.co/600x400" alt="Image logo">
-    <h1 class="home-main-title">ExpoTIM</h1>
   </div>
   <section class="accueil-informations">
+    <h1 class="home-main-title">ExpoTIM</h1>
     <p class="home-main-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam maiores nostrum, molestiae sit quibusdam cupiditate in non eius qui suscipit laborum, provident totam expedita nisi?</p>
   </section>
   <section class="accueil-projets">
@@ -22,17 +22,15 @@
 
     # Categorie parent
     if ($catProjets) : ?>
-      <section class="accueil-projets">
         <a class="accueil-projets-click" href="<?php echo get_category_link($catProjets->term_id) ?>">
           <div class="accueil-projets-visuel">
             <img src="https://placehold.co/600x400" alt="Visuel tout les projets">
           </div>
           <div class="accueil-projets-description">
-            <h1 class="accueil-projets-description-titre"><?php echo $catProjets->name ?></h1>
+            <h2 class="accueil-projets-description-titre"><?php echo $catProjets->name ?></h2>
             <h3 class="accueil-projets-description-paragraphe"><?php echo $catProjets->description ?></h3>
           </div>
         </a>
-      </section>
       <?php endif;
 
     # Categories enfants
@@ -42,7 +40,7 @@
             <img src="https://placehold.co/600x400" alt="Visuel tout les projets">
           </div>
           <div class="accueil-projets-description">
-            <h1 class="accueil-projets-description-titre"><?php echo $cat->name ?></h1>
+            <h2 class="accueil-projets-description-titre"><?php echo $cat->name ?></h2>
             <h3 class="accueil-projets-description-paragraphe"><?php echo $cat->description ?></h3>
           </div>
         </a>
