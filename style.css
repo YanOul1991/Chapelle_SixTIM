@@ -177,11 +177,11 @@ main.accueil {
 /* ==================== PARTIE FOOTER ==================== */
 
 
-section#footer_complet > * {
+div#footer_complet > * {
   width: 25%;
 }
 
-section#footer_complet {
+div#footer_complet {
 
   font-size:Clamp(4px, 1.5vw, 8px);
   border: 2px dashed orange;
@@ -192,7 +192,7 @@ section#footer_complet {
   align-items: center;
 }
 
-section#footer_navs {
+div#footer_navs {
   border: 2px dashed yellow;
   height:75%;
 
@@ -216,7 +216,7 @@ section#footer_navs {
 }
 
 
-section#footer_central {
+div#footer_central {
   width:30%;
   border: 2px dashed yellow;
 
@@ -227,7 +227,7 @@ section#footer_central {
 
 }
 
-section#footer_logo_contenant {
+div#footer_logo_contenant {
   border: 2px dashed yellow;
 
   width:75%;
@@ -246,7 +246,7 @@ section#footer_logo_contenant {
   height:auto;
 }
 
-section#footer_social_contenant {
+div#footer_social_contenant {
   border: 2px dashed yellow;
 
   display: flex;
@@ -257,7 +257,7 @@ section#footer_social_contenant {
   gap: 10px;
 }
 
-section#footer_legal_contenant {
+div#footer_legal_contenant {
   border: 2px dashed yellow;
 
   display: flex;
@@ -268,7 +268,7 @@ section#footer_legal_contenant {
   gap: 10px;
 }
 
-section#footer_a_propos {
+div#footer_a_propos {
   border: 2px dashed orange;
 
   display: flex;
@@ -278,8 +278,3 @@ section#footer_a_propos {
 
   gap: 10px;
 }
-
-
-
-
-

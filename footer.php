@@ -14,23 +14,23 @@
 
 
 
-<section id="footer_complet">
+<div id="footer_complet">
   <?php get_caller(); ?>
 
-    <section id="footer_navs"> <!-- Navs -->
+    <div id="footer_navs"> <!-- Navs -->
         <h3>Les pages du site</h3>
         <?php get_nav('footer'); ?>
-    </section>
+  </div>
 
-  <section id="footer_central"> <!-- Section centrale (logo, réseaux, légal) -->
+  <div id="footer_central"> <!-- Section centrale (logo, réseaux, légal) -->
 
-    <section id="footer_logo_contenant"> <!-- L'image logo -->
+    <div id="footer_logo_contenant"> <!-- L'image logo -->
       <div class="footer_logo">
         <?php the_custom_logo(); ?>
       </div>
-    </section>
+    </div>
     
-    <section id="footer_social_contenant"> <!-- Les liens vers réseaux sociaux | Customizer -->
+    <div id="footer_social_contenant"> <!-- Les liens vers réseaux sociaux | Customizer -->
       <div class="social-links">
         <a href="<?php echo $icone_1_url ?>">
           <img class="social-links-icon" src="<?php echo $icone_1_img ?>" alt="<?php echo $icone_1_name ?>" width="32" height="32">
@@ -45,17 +45,17 @@
           <img class="social-links-icon" src="<?php echo $icone_4_img ?>" alt="<?php echo $icone_4_name ?>" width="32" height="32">
         </a>
       </div>
-    </section>
+    </div>
     
-    <section id="footer_legal_contenant"> <!-- Mention légal -->
+    <div id="footer_legal_contenant"> <!-- Mention légal -->
       <h3>Mentions légales</h3>
       <p>© ChapelleSixTIM - Tous droits réservés.</p> <!-- À revoir pour rendre dynamique genre un champ customizer -->
-    </section>
-  </section>
+    </div>
+  </div>
 
-  <section id="footer_a_propos"> <!-- À propos --> 
+  <div id="footer_a_propos"> <!-- À propos --> 
     <h3>À propos de l'exposition</h3>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium tempora optio, vel, mollitia impedit dolore ratione ut nobis nisi quas quibusdam? Eveniet perspiciatis tempora fugit ab veniam officiis, tenetur labore.</p>
-  </section>
+  </div>
 
-</section>
+</div>
