@@ -2,7 +2,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
-  background-color: var(--couleur-background-principal);
+  background-image: radial-gradient(grey, black);
 
   display: flex;
   flex-flow: column nowrap;
@@ -39,7 +39,7 @@
 .single-project-texte-item{
   font-size: var(--texte-mobile-taille-principal);
   font-family: var(--texte-font-principal);
-  background-color: #DEDEDE;
+  background-color: var(--couleur-background-secondaire);
   color: var( --texte-couleur-principal);
   padding: 10px;
 }
