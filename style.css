@@ -20,6 +20,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* ================================================ */
 
 @import "css/main.css";
+@import "css/single-project.css";
 
 /* Generiques */
 html{
@@ -112,11 +113,6 @@ li.menu-item:hover a{
   color: #1358be;
 }
 
-footer{
-  height: 200px;
-  border: 2px dashed red;
-  flex: 1 0 auto;
-}
 
 /* ================= Project gallery ================= */
 
@@ -170,4 +166,115 @@ main.accueil {
   display: flex;
   flex-flow: column nowrap;
 
+}
+
+/* ==================== PARTIE HEADER ==================== */
+.header-menu-list{
+  font-size:Clamp(8px, 1.5vw, 16px);
+}
+
+
+/* ==================== PARTIE FOOTER ==================== */
+
+
+div#footer_complet > * {
+  width: 25%;
+}
+
+div#footer_complet {
+
+  font-size:Clamp(4px, 1.5vw, 8px);
+  border: 2px dashed orange;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div#footer_navs {
+  border: 2px dashed yellow;
+  height:75%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.footer-menu-container > #menu-nav-1 {
+  border: 2px dashed yellow;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+}
+
+
+div#footer_central {
+  width:30%;
+  border: 2px dashed yellow;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+div#footer_logo_contenant {
+  border: 2px dashed yellow;
+
+  width:75%;
+  height:100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.footer_logo{
+  width:100%;
+  height:auto;
+}
+
+div#footer_social_contenant {
+  border: 2px dashed yellow;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+div#footer_legal_contenant {
+  border: 2px dashed yellow;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+div#footer_a_propos {
+  border: 2px dashed orange;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
 }
