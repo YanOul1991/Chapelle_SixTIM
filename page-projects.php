@@ -16,7 +16,7 @@ $queryPost = new WP_Query($queryArgs);
           <li class="project-gallery-list-item">
             <?php get_project_card("project-gallery-list-item"); ?>
           </li>
-      <?php endwhile;
+          <?php endwhile;
       endif; ?>
     </ul>
   </div>
