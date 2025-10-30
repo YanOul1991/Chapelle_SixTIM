@@ -2,6 +2,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
+  background-image: radial-gradient(grey, black);
 
   display: flex;
   flex-flow: column nowrap;
@@ -24,7 +25,7 @@
   font-size: var(--texte-mobile-taille-titre);
   order: -1;
 }
-
+  
 .single-project-membres{
   order: -1;
   font-size: var(--texte-mobile-taille-principal);
@@ -33,12 +34,14 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
+  letter-spacing: 2px;
 }
 
 .single-project-texte-item{
   font-size: var(--texte-mobile-taille-principal);
-  background: #A66F16;
-  color: var(--texte-couleur-alternatif);
+  font-family: var(--texte-font-principal);
+  background-color: var(--couleur-background-secondaire);
+  color: var( --texte-couleur-principal);
   padding: 10px;
 }
 
