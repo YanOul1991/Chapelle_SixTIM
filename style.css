@@ -318,3 +318,75 @@ div#footer_a_propos {
 
   gap: 10px;
 }
+
+/* ==================== PAGE INFO ==================== */
+
+
+#PageInfo {
+  /* border: 3px dashed magenta; */
+  padding-top:20px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 50px;
+}
+
+#ExplicationsContenant {
+  width: 60%;
+
+  border: 2px dashed cyan;
+}
+
+#ProjetsContenant {
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 20px;
+}
+
+#LignesAccrochesContenant{
+  width: 60%;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+
+  gap: 10px;
+  border: 2px dashed lime;
+}
+
+#GalerieImagesContenant{
+  width: 95%;
+}
+
+.ImageGrid {
+display: grid;
+grid-template-columns: 2fr 3fr 2fr;
+grid-template-rows: 2fr repeat(3, 1fr) 2fr;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+
+.ImageItem{
+  width: 100%;
+  height: auto;
+  border:2px dashed red;
+  overflow: hidden;
+}
+
+.Row-1-1 { grid-area: 1 / 1 / 2 / 3; }
+.Row-1-2 { grid-area: 1 / 3 / 2 / 4; }
+.Row-2-1-1 { grid-area: 2 / 1 / 4 / 2; }
+.Row-2-1-2 { grid-area: 4 / 1 / 5 / 2; }
+.Row-2-2 { grid-area: 2 / 2 / 5 / 3; }
+.Row-2-3-1 { grid-area: 2 / 3 / 3 / 4; }
+.Row-2-3-2 { grid-area: 3 / 3 / 5 / 4; }
+.Row-3-1 { grid-area: 5 / 1 / 6 / 2; }
+.Row-3-2 { grid-area: 5 / 2 / 6 / 4; }

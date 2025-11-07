@@ -4,7 +4,7 @@
   <!-- "L'ExpoTIM Page Info" -->
   <?php get_caller()?>  
 
-  <section id="infoPage">
+  <section id="PageInfo">
   <!-- Partie paragraphe d'explications -->
     <section id="ExplicationsContenant">
       <p id="ExplicationsTexte">
@@ -16,7 +16,7 @@
     <section id="ProjetsContenant">
       <div id="Projet1" class="ProjetBox">
         <div id="Projet1Image" class="ProjetImageContenant">
-          <img src="chemin/vers/image1.jpg" alt="Projet 1 Image">
+          <img src="https://placehold.co/360x400" alt="Projet 1 Image">
         </div>
         <div id="Projet1TexteContenant" class="ProjetTexteContenant">
           <p class="ProjetTexte">Projet 1 Description</p>
@@ -24,7 +24,7 @@
       </div>
       <div id="Projet2" class="ProjetBox">
         <div id="Projet2Image" class="ProjetImageContenant">
-          <img src="chemin/vers/image2.jpg" alt="Projet 2 Image">
+          <img src="https://placehold.co/360x400" alt="Projet 2 Image">
         </div>
         <div id="Projet2TexteContenant" class="ProjetTexteContenant">
           <p class="ProjetTexte">Projet 2 Description</p>
@@ -32,7 +32,7 @@
       </div>
       <div id="Projet3" class="ProjetBox">
         <div id="Projet3Image" class="ProjetImageContenant">
-          <img src="chemin/vers/image3.jpg" alt="Projet 3 Image">
+          <img src="https://placehold.co/360x400" alt="Projet 3 Image">
         </div>
         <div id="Projet3TexteContenant" class="ProjetTexteContenant">
           <p class="ProjetTexte">Projet 3 Description</p>
@@ -41,8 +41,43 @@
     </section>
 
   <!-- Partie Lignes d'accroches pour gallerie images -->
+    <section id="LignesAccrochesContenant">
+      <p class="LigneAccroche">Découvrez nos projets innovants</p>
+      <p class="LigneAccroche">Inspirez-vous avec nos réalisations</p>
+    </section>
 
   <!-- Partie gallerie images -->
+   <!-- Grid d'images de tailles différentes -->
+    <section id="GalerieImagesContenant">
+      <div class="ImageGrid">
+        <div class="ImageItem Row-1-1">
+          <img src="https://picsum.photos/200/300" alt="Image gallerie 1">
+        </div>
+        <div class="ImageItem Row-1-2">
+          <img src="https://picsum.photos/200/300" alt="Image gallerie 0">
+        </div>
+        <div class="ImageItem Row-2-1-1">
+          <img src="https://picsum.photos/200/300" alt="Image gallerie 2">
+        </div>
+        <div class="ImageItem Row-2-1-2">
+          <img src="https://picsum.photos/200/300" alt="Image gallerie 3">
+        </div>
+        <div class="ImageItem Row-2-2">
+          <img src="https://picsum.photos/200/300" alt="Image gallerie 4">
+        </div>
+        <div class="ImageItem Row-2-3-1">
+          <img src="https://picsum.photos/200/300" alt="Image gallerie 5">
+        </div>
+        <div class="ImageItem Row-2-3-2">
+          <img src="https://picsum.photos/200/300" alt="Image gallerie 6">
+        </div>
+        <div class="ImageItem Row-3-1">
+          <img src="https://picsum.photos/200/300" alt="Image gallerie 7">
+        </div>
+        <div class="ImageItem Row-3-2">
+          <img src="https://picsum.photos/200/300" alt="Image gallerie 8">
+        </div>
+      </div>
   </section>
 
   <!-- FOOTER -->
