@@ -164,6 +164,7 @@ li.project-gallery-list-item{
 
   width: 30%;
   aspect-ratio: 1 / 1.6;
+  border-radius: 8%;
 
   display: flex;
   flex-flow: column nowrap;
@@ -201,7 +202,28 @@ main.accueil {
 
   display: flex;
   flex-flow: column nowrap;
+  padding-bottom: 2rem;
+}
+.accueil-intro{
+  margin-top: 1.5rem;
+}
+.accueil-informations{
+  text-align: center;}
 
+.accueil-projets-click{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.accueil-projets-click:hover{
+  text-decoration: none;
+}
+.accueil-projets-description{
+  text-align: center;
+}
+.accueil-projets-description-paragraphe{
+  font-weight: normal;
 }
 
 /* ==================== PARTIE HEADER ==================== */
@@ -221,6 +243,7 @@ div#footer_complet {
   font-size:Clamp(15px, 1.5vw, 8px);
   /* border: 2px dashed orange; */
 
+  padding-top: 1rem;
   padding: 15px;
   display: flex;
   flex-flow: row nowrap;
