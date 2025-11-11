@@ -175,7 +175,7 @@ li.project-gallery-list-item{
 
 }
 li.project-gallery-list-item:hover{
-  box-shadow: 2px 2px 20px 2px white;
+  box-shadow: 2px 2px 20px 20px white;
   width: 31%;
 }
 
