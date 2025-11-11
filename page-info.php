@@ -16,7 +16,7 @@
     <section id="ProjetsContenant">
       <div id="Projet1" class="ProjetBox">
         <div id="Projet1Image" class="ProjetImageContenant">
-          <img src="https://placehold.co/360x400" alt="Projet 1 Image">
+          <img src="https://placehold.co/100x100" alt="Projet 1 Image">
         </div>
         <div id="Projet1TexteContenant" class="ProjetTexteContenant">
           <h3 class="ProjetTitre"> Projet 1 TITRE </h3>
@@ -25,7 +25,7 @@
       </div>
       <div id="Projet2" class="ProjetBox">
         <div id="Projet2Image" class="ProjetImageContenant">
-          <img src="https://placehold.co/360x400" alt="Projet 2 Image">
+          <img src="https://placehold.co/100x100" alt="Projet 2 Image">
         </div>
         <div id="Projet2TexteContenant" class="ProjetTexteContenant">
           <h3 class="ProjetTitre"> Projet 2 TITRE </h3>
@@ -34,7 +34,7 @@
       </div>
       <div id="Projet3" class="ProjetBox">
         <div id="Projet3Image" class="ProjetImageContenant">
-          <img src="https://placehold.co/360x400" alt="Projet 3 Image">
+          <img src="https://placehold.co/100x100" alt="Projet 3 Image">
         </div>
         <div id="Projet3TexteContenant" class="ProjetTexteContenant">
           <h3 class="ProjetTitre"> Projet 3 TITRE </h3>
