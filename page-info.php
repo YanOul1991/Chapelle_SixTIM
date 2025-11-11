@@ -19,7 +19,8 @@
           <img src="https://placehold.co/360x400" alt="Projet 1 Image">
         </div>
         <div id="Projet1TexteContenant" class="ProjetTexteContenant">
-          <p class="ProjetTexte">Projet 1 Description</p>
+          <h3 class="ProjetTitre"> Projet 1 TITRE </h3>
+          <p class="ProjetTexte">Projet 1 Description Ceci est la description d'un projet pour voir la taille du paragraphe et la quantité d'espace qu'il faudrait lui donner woaw je capote solide d'écrire ça à la main</p>
         </div>
       </div>
       <div id="Projet2" class="ProjetBox">
@@ -27,7 +28,8 @@
           <img src="https://placehold.co/360x400" alt="Projet 2 Image">
         </div>
         <div id="Projet2TexteContenant" class="ProjetTexteContenant">
-          <p class="ProjetTexte">Projet 2 Description</p>
+          <h3 class="ProjetTitre"> Projet 2 TITRE </h3>
+          <p class="ProjetTexte">Projet 2 Description Ceci est la description d'un projet pour voir la taille du paragraphe et la quantité d'espace qu'il faudrait lui donner woaw je capote solide d'écrire ça à la main</p>
         </div>
       </div>
       <div id="Projet3" class="ProjetBox">
@@ -35,7 +37,8 @@
           <img src="https://placehold.co/360x400" alt="Projet 3 Image">
         </div>
         <div id="Projet3TexteContenant" class="ProjetTexteContenant">
-          <p class="ProjetTexte">Projet 3 Description</p>
+          <h3 class="ProjetTitre"> Projet 3 TITRE </h3>
+          <p class="ProjetTexte">Projet 3 Description Ceci est la description d'un projet pour voir la taille du paragraphe et la quantité d'espace qu'il faudrait lui donner woaw je capote solide d'écrire ça à la main</p>
         </div>
       </div>
     </section>

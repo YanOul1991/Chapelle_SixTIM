@@ -344,10 +344,33 @@ div#footer_a_propos {
 
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
+  border: 2px dashed green;
   gap: 20px;
+}
+
+.ProjetBox{
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px dashed blue;
+  gap: 10px;
+}
+
+.ProjetTexteContenant{
+  width: 90%;
+  border: 2px dashed orange;
+}
+
+.ProjetTitre{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 #LignesAccrochesContenant{
@@ -368,10 +391,11 @@ div#footer_a_propos {
 
 .ImageGrid {
 display: grid;
-grid-template-columns: 2fr 3fr 2fr;
-grid-template-rows: 2fr repeat(3, 1fr) 2fr;
+grid-template-columns: 2fr 3fr 2fr; /* keep center column wider by default */
+/* limit row growth so tall center item doesn't expand the surrounding rows too much */
+grid-template-rows: auto repeat(3, minmax(150px, auto)) auto;
 grid-column-gap: 10px;
-grid-row-gap: 10px;
+grid-row-gap: 8px;
 }
 
 .ImageItem{
@@ -379,6 +403,14 @@ grid-row-gap: 10px;
   height: auto;
   border:2px dashed red;
   overflow: hidden;
+}
+
+/* Make images fill their grid cell to avoid extra white space */
+.ImageItem img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .Row-1-1 { grid-area: 1 / 1 / 2 / 3; }
@@ -390,3 +422,79 @@ grid-row-gap: 10px;
 .Row-2-3-2 { grid-area: 3 / 3 / 5 / 4; }
 .Row-3-1 { grid-area: 5 / 1 / 6 / 2; }
 .Row-3-2 { grid-area: 5 / 2 / 6 / 4; }
+
+/* ==================== MOBILE / SMALL SCREENS ==================== */
+@media (max-width: 650px) {
+
+  /* Stack the projects vertically */
+  #ProjetsContenant {
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 0;
+  }
+
+  .ProjetBox{
+    width: 95%;
+    border: none; /* cleaner on mobile */
+    gap: 8px;
+  }
+
+  .ProjetTexteContenant{ width: 95%; }
+
+  /* Make gallery items one per "row" and nearly full-screen */
+  #GalerieImagesContenant { width: 100%; }
+
+  .ImageGrid{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: 95vh; /* each item ~95% of viewport height */
+    gap: 12px;
+    justify-items: center;
+  }
+
+  .ImageItem{
+    width: 95vw;           /* leave small gutters */
+    height: 95vh;         /* nearly full viewport height */
+    /* keep visible outline on mobile so grid items remain distinct */
+    border: 2px dashed red !important;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  /* Ensure images fill their container without distortion */
+  .ImageItem img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* prevent grid-area collisions on mobile by letting grid place items in flow */
+  .Row-1-1, .Row-1-2, .Row-2-1-1, .Row-2-1-2, .Row-2-2, .Row-2-3-1, .Row-2-3-2, .Row-3-1, .Row-3-2{
+    grid-column: 1 / 2 !important;
+    grid-row: auto !important;
+  }
+
+  /* Reduce typography on mobile for better fit */
+  html { font-size: 14px; }
+  body { line-height: 1.4; }
+
+  #ExplicationsContenant p,
+  .LigneAccroche,
+  .ProjetTexteContenant p,
+  .ProjetTexte {
+    font-size: 0.9rem; /* small body text */
+    line-height: 1.4;
+  }
+
+  .ProjetTitre,
+  h1.project-gallery-list-item-title {
+    font-size: 1.1rem;
+  }
+
+  .header-menu-list {
+    font-size: 0.95rem;
+  }
+
+}
