@@ -1,0 +1,46 @@
+/*
+  Styles CSS pour le contenu de la page d'accueil
+*/
+
+.accueil {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 100px;
+}
+
+.accueil > section {
+  width: 90%;
+}
+
+.accueil-informations {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+
+.accueil-informations-titre {
+  font-size: var(--texte-desktop-taille-titre);
+  font-weight: var(--texte-poids-titre);
+}
+
+.accueil-informations-description {
+  font-size: var(--texte-desktop-taille-principal);
+}
+
+.accueil-projets {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+
+.accueil-projets {
+  position: relative;
+  width: 100%;
+}

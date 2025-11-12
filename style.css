@@ -21,6 +21,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import "css/main.css";
 @import "css/single-project.css";
+@import "css/accueil.css";
 
 /* Generiques */
 html{
@@ -156,16 +157,6 @@ li.project-gallery-list-item{
 h1.project-gallery-list-item-title{
   font-size: 1.5rem;
   text-align: center;
-}
-
-/* ==================== PAGE ACCUEIL ==================== */
-
-main.accueil {
-  border: 3px dashed magenta;
-
-  display: flex;
-  flex-flow: column nowrap;
-
 }
 
 /* ==================== PARTIE HEADER ==================== */
