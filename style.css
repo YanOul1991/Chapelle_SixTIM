@@ -25,7 +25,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* Generiques */
 html{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--texte-font-titre);
 }
 
 * {
@@ -39,11 +39,19 @@ ul{
 
 a{
   text-decoration: none;
+  color: white;
+}
+header a{
+  text-decoration: none;
+  color: black;
+}
+header a:hover{
   color: black;
 }
 
 a:hover{
-  color: black;
+  color: white;
+  text-decoration: underline;
 }
 
 body{
@@ -57,6 +65,8 @@ body{
 }
 
 main{
+  background-color: var(--couleur-background-principal);
+  color: var( --texte-couleur-alternatif);
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -64,14 +74,15 @@ main{
 
   flex: 1 1 auto;
 
-  border: 2px dashed cyan;
+  /* border: 2px dashed cyan; */
 }
+
 
 /* ================================================ */
 
 header{
-  /* DEBUG - TO REMOVE */ border: 2px dashed lime;
-
+  /* DEBUG - TO REMOVE  border: 2px dashed lime;*/
+  
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -79,6 +90,7 @@ header{
   padding: 10px;
 
   flex: 0 0 auto;
+  height: 3rem;
 }
 
 div.main-logo {
@@ -140,21 +152,45 @@ ul.project-gallery-list{
   justify-content: center;
   align-items: center;
   gap: 40px;
+
+  @media (max-width:650px ) {
+    flex-flow: column wrap;
+  }
 }
 
 li.project-gallery-list-item{
-  border: 1px dashed purple;
+   /* border: 10px solid transparent;
+  border-image: url("images/3e\ annee V3.png") 30;  */
+  transition: box-shadow, width 0.25s;
 
   width: 30%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1.6;
 
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+
+  background-image: url("images/Affiche-jeu-Hachiman.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+
+}
+li.project-gallery-list-item:hover{
+  box-shadow: 2px 2px 20px 2px white;
+  width: 31%;
 }
 
 h1.project-gallery-list-item-title{
+  font-family: var(--texte-font-principal);
+  /* opacity: 25%; */
+  font-size: 1.5rem;
+  text-align: center;
+
+  /* transition: opacity 0.25s; */
+}
+h1.project-gallery-list-item-title:hover{
+  /* opacity: 1; */
   font-size: 1.5rem;
   text-align: center;
 }
@@ -173,18 +209,20 @@ div#footer_complet > * {
 }
 
 div#footer_complet {
+  font-size:Clamp(15px, 1.5vw, 8px);
+  /* border: 2px dashed orange; */
 
-  font-size:Clamp(4px, 1.5vw, 8px);
-  border: 2px dashed orange;
-
+  padding: 15px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
+  background-color: #181818;
+  color: white;
 }
 
 div#footer_navs {
-  border: 2px dashed yellow;
+  /* border: 2px dashed yellow; */
   height:75%;
 
   display: flex;
@@ -193,10 +231,12 @@ div#footer_navs {
   align-items: center;
 
   gap: 10px;
+  /* background-image: url("images/pallette.png"); */
 }
 
 .footer-menu-container > #menu-nav-1 {
-  border: 2px dashed yellow;
+  /* border: 2px dashed yellow; */
+  font-family: var(--texte-font-seconaire);
 
   display: flex;
   flex-flow: column nowrap;
@@ -209,7 +249,7 @@ div#footer_navs {
 
 div#footer_central {
   width:30%;
-  border: 2px dashed yellow;
+  /* border: 2px dashed yellow; */
 
   display: flex;
   flex-flow: column nowrap;
@@ -219,7 +259,7 @@ div#footer_central {
 }
 
 div#footer_logo_contenant {
-  border: 2px dashed yellow;
+  /* border: 2px dashed yellow; */
 
   width:75%;
   height:100%;
@@ -238,7 +278,7 @@ div#footer_logo_contenant {
 }
 
 div#footer_social_contenant {
-  border: 2px dashed yellow;
+  /* border: 2px dashed yellow; */
 
   display: flex;
   flex-flow: column nowrap;
@@ -249,7 +289,8 @@ div#footer_social_contenant {
 }
 
 div#footer_legal_contenant {
-  border: 2px dashed yellow;
+  /* border: 2px dashed yellow; */
+  font-family: var(--texte-font-seconaire);
 
   display: flex;
   flex-flow: column nowrap;
@@ -260,8 +301,8 @@ div#footer_legal_contenant {
 }
 
 div#footer_a_propos {
-  border: 2px dashed orange;
-
+  /* border: 2px dashed orange; */
+  font-family: var(--texte-font-seconaire);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
