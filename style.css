@@ -64,6 +64,7 @@ body{
 
 main{
   background-color: var(--couleur-background-principal);
+  /* box-shadow: 0px 0px 5px 7px rgb(68, 17, 17) inset; */
   color: var( --texte-couleur-alternatif);
   display: flex;
   flex-flow: column nowrap;
@@ -130,6 +131,7 @@ li.menu-item:hover a{
 div.project-gallery{
   width: 70vw;
   padding: 10px;
+  padding-bottom: 2rem;
 
   display: flex;
   flex-flow: column nowrap;
@@ -176,7 +178,7 @@ li.project-gallery-list-item{
 
 }
 li.project-gallery-list-item:hover{
-  box-shadow: 2px 2px 20px 2px white;
+  box-shadow: 2px 2px 20px 20px white;
   width: 31%;
 }
 
@@ -198,6 +200,7 @@ h1.project-gallery-list-item-title:hover{
 
 main.accueil {
   /* border: 3px dashed magenta; */
+  /* background-image: url("images/pillier\ backgound.png"); */
 
   display: flex;
   flex-flow: column nowrap;
@@ -207,7 +210,9 @@ main.accueil {
   margin-top: 1.5rem;
 }
 .accueil-informations{
-  text-align: center;}
+  text-align: center;
+  width: 69%;
+}
 
 .accueil-projets-click{
   display: flex;
@@ -220,6 +225,7 @@ main.accueil {
 }
 .accueil-projets-description{
   text-align: center;
+  width: 69%;
 }
 .accueil-projets-description-paragraphe{
   font-weight: normal;
