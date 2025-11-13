@@ -4,8 +4,8 @@
     <img src="https://placehold.co/600x400" alt="Image logo">
   </div>
   <section class="accueil-informations">
-    <h1 class="home-main-title">ExpoTIM</h1>
-    <p class="home-main-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam maiores nostrum, molestiae sit quibusdam cupiditate in non eius qui suscipit laborum, provident totam expedita nisi?</p>
+    <h1 class="accueil-informations-titre">ExpoTIM</h1>
+    <p class="accueil-information-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam maiores nostrum, molestiae sit quibusdam cupiditate in non eius qui suscipit laborum, provident totam expedita nisi?</p>
   </section>
   <section class="accueil-projets">
     <?php
@@ -22,7 +22,7 @@
 
     # Categorie parent
     if ($catProjets) : ?>
-        <a class="accueil-projets-click" href="<?php echo get_category_link($catProjets->term_id) ?>">
+        <a class="accueil-projets-clique" href="<?php echo get_category_link($catProjets->term_id) ?>">
           <div class="accueil-projets-visuel">
             <img src="https://placehold.co/600x400" alt="Visuel tout les projets">
           </div>
@@ -35,7 +35,7 @@
 
     # Categories enfants
     if (!empty($catProjetSpec) && ! is_wp_error($catProjetSpec)) : foreach ($catProjetSpec as $cat) : ?>
-        <a class="accueil-projets-click" href="<?php echo get_category_link($cat->term_id) ?>">
+        <a class="accueil-projets-clique" href="<?php echo get_category_link($cat->term_id) ?>">
           <div class="accueil-projets-visuel">
             <img src="https://placehold.co/600x400" alt="Visuel tout les projets">
           </div>

@@ -19,7 +19,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* ================================================ */
 
-/* CSS files are enqueued from functions/enqueues.php to ensure proper load order */
+@import "css/main.css";
+@import "css/single-project.css";
+@import "css/accueil.css";
+@import "css/page-createurs.css";
 
 /* Generiques */
 html{
@@ -194,41 +197,6 @@ h1.project-gallery-list-item-title:hover{
   /* opacity: 1; */
   font-size: 1.5rem;
   text-align: center;
-}
-
-/* ==================== PAGE ACCUEIL ==================== */
-
-main.accueil {
-  /* border: 3px dashed magenta; */
-  /* background-image: url("images/pillier\ backgound.png"); */
-
-  display: flex;
-  flex-flow: column nowrap;
-  padding-bottom: 2rem;
-}
-.accueil-intro{
-  margin-top: 1.5rem;
-}
-.accueil-informations{
-  text-align: center;
-  width: 69%;
-}
-
-.accueil-projets-click{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1.5rem;
-}
-.accueil-projets-click:hover{
-  text-decoration: none;
-}
-.accueil-projets-description{
-  text-align: center;
-  width: 69%;
-}
-.accueil-projets-description-paragraphe{
-  font-weight: normal;
 }
 
 /* ==================== PARTIE HEADER ==================== */
