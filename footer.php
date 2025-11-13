@@ -48,7 +48,6 @@
     </div>
     
     <div id="footer_legal_contenant"> <!-- Mention légal -->
-      <h3>Mentions légales</h3>
       <p>© ChapelleSixTIM - Tous droits réservés.</p> <!-- À revoir pour rendre dynamique genre un champ customizer -->
     </div>
   </div>

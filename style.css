@@ -217,7 +217,8 @@ div#footer_complet > * {
 }
 
 div#footer_complet {
-  font-size:Clamp(15px, 1.5vw, 8px);
+  /* Responsive footer text: min 12px, scales with viewport, max 16px */
+  font-size: clamp(6px, 1.2vw, 16px);
   /* border: 2px dashed orange; */
 
   padding: 15px;
@@ -256,7 +257,7 @@ div#footer_navs {
 
 
 div#footer_central {
-  width:30%;
+  width:50%;
   /* border: 2px dashed yellow; */
 
   display: flex;
@@ -496,6 +497,9 @@ grid-row-gap: 8px;
     grid-row: auto !important;
   }
 
+  #ExplicationsContenant{
+    width: 90%;
+  }
 
   #ExplicationsContenant p,
   .LigneAccroche,
@@ -512,6 +516,14 @@ grid-row-gap: 8px;
 
   .header-menu-list {
     font-size: 0.95rem;
+  }
+
+    #footer_complet {
+    font-size: 0.6rem;
+  }
+
+    #footer_legal_contenant{
+    font-size:0.5rem;
   }
 
 }
@@ -586,6 +598,14 @@ grid-row-gap: 8px;
 
   .header-menu-list {
     font-size: 1rem;
+  }
+
+  #footer_complet {
+    font-size: 0.7rem;
+  }
+
+  #footer_legal_contenant{
+    font-size:0.5rem;
   }
 
 }
