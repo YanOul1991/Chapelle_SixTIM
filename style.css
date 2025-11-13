@@ -210,7 +210,8 @@ div#footer_complet > * {
 }
 
 div#footer_complet {
-  font-size:Clamp(15px, 1.5vw, 8px);
+  /* Responsive footer text: min 12px, scales with viewport, max 16px */
+  font-size: clamp(6px, 1.2vw, 16px);
   /* border: 2px dashed orange; */
 
   padding: 15px;
@@ -249,7 +250,7 @@ div#footer_navs {
 
 
 div#footer_central {
-  width:30%;
+  width:50%;
   /* border: 2px dashed yellow; */
 
   display: flex;
@@ -310,4 +311,294 @@ div#footer_a_propos {
   align-items: center;
 
   gap: 10px;
+}
+
+/* ==================== PAGE INFO ==================== */
+
+
+#PageInfo {
+  padding-top:20px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 50px;
+}
+
+#ExplicationsContenant {
+  width: 60%;
+
+  border: 2px dashed cyan;
+}
+
+#ProjetsContenant {
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px dashed green;
+  gap: 20px;
+}
+
+.ProjetBox{
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px dashed blue;
+  gap: 10px;
+}
+
+.ProjetImageContenant{
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px solid rgba(0,0,0,0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  aspect-ratio: 2 / 3; /*Les images sont verticales*/
+}
+
+.ProjetImageContenant img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ProjetTexteContenant{
+  width: 90%;
+  border: 2px dashed orange;
+}
+
+.ProjetTitre{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#LignesAccrochesContenant{
+  width: 60%;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+
+  gap: 10px;
+  border: 2px dashed lime;
+}
+
+#GalerieImagesContenant{
+  width: 95%;
+}
+
+.ImageGrid {
+display: grid;
+grid-template-columns: 2fr 3fr 2fr;
+grid-template-rows: auto repeat(3, minmax(150px, auto)) auto;
+grid-column-gap: 10px;
+grid-row-gap: 8px;
+}
+
+.ImageItem{
+  width: 100%;
+  height: auto;
+  border:2px dashed red;
+  overflow: hidden;
+}
+
+.ImageItem img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Row-1-1 { grid-area: 1 / 1 / 2 / 3; }
+.Row-1-2 { grid-area: 1 / 3 / 2 / 4; }
+.Row-2-1-1 { grid-area: 2 / 1 / 4 / 2; }
+.Row-2-1-2 { grid-area: 4 / 1 / 5 / 2; }
+.Row-2-2 { grid-area: 2 / 2 / 5 / 3; }
+.Row-2-3-1 { grid-area: 2 / 3 / 3 / 4; }
+.Row-2-3-2 { grid-area: 3 / 3 / 5 / 4; }
+.Row-3-1 { grid-area: 5 / 1 / 6 / 2; }
+.Row-3-2 { grid-area: 5 / 2 / 6 / 4; }
+
+/* =============== MOBILE / PETITS ECRANS ================ */
+@media (max-width: 650px) {
+  
+  html { 
+    font-size: 14px; 
+  }
+  body { 
+    line-height: 1.4; 
+  }
+
+  #ProjetsContenant {
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 0;
+  }
+
+  .ProjetBox{
+    width: 95%;
+    gap: 8px;
+  }
+
+  .ProjetTexteContenant{ 
+    width: 95%; 
+  }
+
+  #GalerieImagesContenant{ 
+    width: 100%; 
+  }
+
+  .ImageGrid{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: 95vh; 
+    gap: 12px;
+    justify-items: center;
+  }
+
+  .ImageItem{
+    width: 95vw;          
+    height: 95vh; 
+    border: 2px dashed red !important;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .ImageItem img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .Row-1-1, .Row-1-2, .Row-2-1-1, .Row-2-1-2, .Row-2-2, .Row-2-3-1, .Row-2-3-2, .Row-3-1, .Row-3-2{
+    grid-column: 1 / 2 !important;
+    grid-row: auto !important;
+  }
+
+  #ExplicationsContenant{
+    width: 90%;
+  }
+
+  #ExplicationsContenant p,
+  .LigneAccroche,
+  .ProjetTexteContenant p,
+  .ProjetTexte {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .ProjetTitre,
+  h1.project-gallery-list-item-title {
+    font-size: 1.1rem;
+  }
+
+  .header-menu-list {
+    font-size: 0.95rem;
+  }
+
+    #footer_complet {
+    font-size: 0.6rem;
+  }
+
+    #footer_legal_contenant{
+    font-size:0.5rem;
+  }
+
+}
+
+/* =============== MEDIUM (tablette) ============== */
+@media (min-width: 651px) and (max-width: 1199px) {
+  html { 
+    font-size: 15px; 
+  }
+  
+  body { 
+    line-height: 1.45; 
+  }
+
+  #GalerieImagesContenant {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+
+  #ProjetsContenant {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .ProjetBox{
+    width: calc(33.333% - 12px);
+    min-width: 200px;
+    box-sizing: border-box;
+  }
+
+  .ImageGrid{
+    grid-template-columns: 1fr 1.4fr 1fr;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .ImageItem{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border:2px dashed red;
+  }
+
+  .ImageItem img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  #ExplicationsContenant p,
+  .LigneAccroche,
+  .ProjetTexteContenant p,
+  .ProjetTexte {
+    font-size: 1rem;
+  }
+
+  .ProjetTitre,
+  h1.project-gallery-list-item-title {
+    font-size: 1.2rem;
+  }
+
+  .header-menu-list {
+    font-size: 1rem;
+  }
+
+  #footer_complet {
+    font-size: 0.7rem;
+  }
+
+  #footer_legal_contenant{
+    font-size:0.5rem;
+  }
+
 }
