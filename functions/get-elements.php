@@ -24,7 +24,13 @@ function get_nav($class_prefix)
  */
 function get_project_card($class_prefix)
 { ?>
-  <h1 class="<?php echo $class_prefix; ?>-title"><?php the_title(); ?></h1>
+   <div class="iconeAnnee">
+     <img src="<?php echo esc_url( get_theme_file_uri( '/images/chapeauGraduation.png' ) ); ?>" alt="Image Createur">
+   </div>
+
+  <div class="informationProjet">
+   <h1 class="<?php echo $class_prefix; ?>-title"><?php the_title(); ?></h1>
   <?php the_content() ?>
   <a href="<?php the_permalink() ?>">Voir plus</a>
+  </div>
 <?php }

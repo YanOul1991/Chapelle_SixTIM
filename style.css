@@ -150,16 +150,40 @@ ul.project-gallery-list{
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
 
-  @media (max-width:650px ) {
+@media (max-width:650px) {
+  ul.project-gallery-list {
     flex-flow: column wrap;
   }
 }
+
+.iconeAnnee{
+    width: 17%;
+    background-color: rgb(0,71,213);
+    margin-bottom: 100%;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.informationProjet{
+   display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconeAnnee img{
+  width: 80%;
+  margin: 0 auto;
+}
+
 
 li.project-gallery-list-item{
    /* border: 10px solid transparent;
   border-image: url("images/3e\ annee V3.png") 30;  */
   transition: box-shadow, width 0.25s;
+  border-radius: 8%;
 
   width: 30%;
   aspect-ratio: 1 / 1.6;
@@ -168,6 +192,7 @@ li.project-gallery-list-item{
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+
 
   background-image: url("images/Affiche-jeu-Hachiman.jpg");
   background-size: cover;
