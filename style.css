@@ -180,21 +180,40 @@ li.project-gallery-list-item{
   background-repeat:no-repeat;
 
 }
-li.project-gallery-list-item:hover{
+li.project-gallery-list-item.projet-arcade:hover{
   box-shadow: 2px 2px 20px 20px white;
+  width: 31%;
+}
+li.project-gallery-list-item.projet-affiches:hover{
+  box-shadow: 2px 2px 20px 20px rgb(255, 0, 217);
+  width: 31%;
+}
+li.project-gallery-list-item.projet-finissants:hover{
+  box-shadow: 2px 2px 20px 20px rgb(0, 64, 255);
   width: 31%;
 }
 
 h1.project-gallery-list-item-title{
   font-family: var(--texte-font-principal);
-  /* opacity: 25%; */
+  opacity: 0;
   font-size: 1.5rem;
   text-align: center;
 
-  /* transition: opacity 0.25s; */
+  transition: opacity 0.25s;
 }
-h1.project-gallery-list-item-title:hover{
-  /* opacity: 1; */
+li.project-gallery-list-item:hover h1.project-gallery-list-item-title{
+  opacity: 1;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h1.project-gallery-list-item-title~a{
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+li.project-gallery-list-item:hover h1.project-gallery-list-item-title~a{
+  opacity: 1;
   font-size: 1.5rem;
   text-align: center;
 }
