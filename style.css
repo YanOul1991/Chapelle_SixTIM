@@ -161,9 +161,29 @@ ul.project-gallery-list{
   }
 }
 
-.iconeAnnee{
+/*.iconeAnnee{
+    
+}*/
+
+li.project-gallery-list-item.projet-arcade .iconeAnnee{
     width: 17%;
-    background-color: rgb(0,71,213);
+    background-color: rgb(21, 255, 0);
+    margin-bottom: 100%;
+    margin-right: auto;
+    padding: 1%;
+}
+
+li.project-gallery-list-item.projet-affiches .iconeAnnee{
+    width: 17%;
+    background-color: rgb(255, 94, 0);
+    margin-bottom: 100%;
+    margin-right: auto;
+    padding: 1%;
+}
+
+li.project-gallery-list-item.projet-finissants .iconeAnnee{
+    width: 17%;
+    background-color: rgb(0, 64, 255);
     margin-bottom: 100%;
     margin-right: auto;
     padding: 1%;
@@ -204,11 +224,11 @@ li.project-gallery-list-item{
 }
 
 li.project-gallery-list-item.projet-arcade:hover{
-  box-shadow: 2px 2px 20px 20px white;
+  box-shadow: 2px 2px 20px 20px rgb(21, 255, 0);
   width: 31%;
 }
 li.project-gallery-list-item.projet-affiches:hover{
-  box-shadow: 2px 2px 20px 20px rgb(255, 0, 217);
+  box-shadow: 2px 2px 20px 20px rgb(255, 94, 0);
   width: 31%;
 }
 li.project-gallery-list-item.projet-finissants:hover{
