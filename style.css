@@ -333,8 +333,8 @@ div#footer_a_propos {
   border: 2px dashed cyan;
 }
 
+/* comment */
 #ProjetsContenant {
-
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
