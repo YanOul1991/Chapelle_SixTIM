@@ -37,7 +37,7 @@ function get_project_card($class_prefix)
             $image = '/images/chapeauGraduation.png';
             break;
         case 'affiches':
-            $image = '/images/pinceau.png';
+            $image = '/images/pinceau2.png';
             break;
         default:
             $image = '/images/chapeauGraduation.png'; // fallback
