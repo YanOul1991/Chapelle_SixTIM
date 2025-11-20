@@ -356,14 +356,14 @@ div#footer_a_propos {
   border: 2px dashed cyan;
 }
 
-/* comment */
+
 #ProjetsContenant {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 
-  border: 2px dashed green;
+  /* border: 2px dashed green; */
   gap: 20px;
 }
 
@@ -374,19 +374,35 @@ div#footer_a_propos {
   justify-content: center;
   align-items: center;
 
-  border: 2px dashed blue;
+  /* border: 2px dashed blue; */
   gap: 10px;
 }
 
 .ProjetImageContenant{
   width: 90%;
   box-sizing: border-box;
-  border: 2px solid rgba(0,0,0,0.12);
+  /* border: 2px solid rgba(0,0,0,0.12); */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   aspect-ratio: 2 / 3; /*Les images sont verticales*/
+  border-radius: 8%;
+
+  transition: box-shadow, width 0.25s;
+}
+
+#Projet1Image:hover{
+    box-shadow: 2px 2px 20px 20px white;
+    width: 100%;
+}
+#Projet2Image:hover{
+   box-shadow: 2px 2px 20px 20px rgb(255, 0, 217);
+   width: 100%;
+}
+#Projet3Image:hover{
+    box-shadow: 2px 2px 20px 20px rgb(0, 64, 255);
+    width: 100%;
 }
 
 .ProjetImageContenant img{
@@ -398,13 +414,13 @@ div#footer_a_propos {
 
 .ProjetTexteContenant{
   width: 90%;
-  border: 2px dashed orange;
+  /* border: 2px dashed orange; */
+  text-align: center;
 }
 
 .ProjetTitre{
   font-size: 1.5rem;
   text-transform: uppercase;
-  text-align: center;
 }
 
 #LignesAccrochesContenant{
@@ -416,7 +432,11 @@ div#footer_a_propos {
   text-align:center;
 
   gap: 10px;
-  border: 2px dashed lime;
+  /* border: 2px dashed lime; */
+}
+
+.LigneAccroche-LienProjet{
+  background-color: #1358be;
 }
 
 #GalerieImagesContenant{
@@ -434,7 +454,7 @@ grid-row-gap: 8px;
 .ImageItem{
   width: 100%;
   height: auto;
-  border:2px dashed red;
+  /* border:2px dashed red; */
   overflow: hidden;
 }
 
