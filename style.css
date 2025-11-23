@@ -23,10 +23,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "css/single-project.css";
 @import "css/accueil.css";
 @import "css/page-createurs.css";
+@import "css/header.css";
 
 /* Generiques */
 html{
   font-family: var(--texte-font-titre);
+  overflow-x:hidden;
 }
 
 * {
@@ -72,7 +74,6 @@ main{
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-
   flex: 1 1 auto;
 
   /* border: 2px dashed cyan; */
@@ -81,34 +82,34 @@ main{
 
 /* ================================================ */
 
-header{
+/* header{ */
   /* DEBUG - TO REMOVE  border: 2px dashed lime;*/
   
-  display: flex;
+  /* display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 
   flex: 0 0 auto;
-  height: 3rem;
-}
-
+  height: 3rem; */
+/* } */
+/* 
 div.main-logo {
   width: 125px;
-}
+} */
 
-a.custom-logo-link{
+/* a.custom-logo-link{
   width: 100%;
-  height: fit-content;
+  height: auto;
 }
 
 img.custom-logo {
   width: 100%;
   height: auto;
-}
+} */
 
-ul.header-menu-list{
+/* ul.header-menu-list{
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -125,7 +126,7 @@ li.menu-item{
 
 li.menu-item:hover a{
   color: #1358be;
-}
+} */
 
 
 /* ================= Project gallery ================= */
