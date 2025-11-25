@@ -109,9 +109,11 @@
           $projets_link = '#';
         endif;
       ?>
+      <section class="LigneAccrocheContenant-Lien">
       <a href="<?php echo esc_url( $projets_link ); ?>">
         <p class="LigneAccroche-LienProjet">Découvrez nos projets innovants</p>
       </a>
+      </section>
       <p class="LigneAccroche">Inspirez-vous avec nos réalisations</p>
     </section>
 
