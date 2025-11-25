@@ -350,10 +350,15 @@ div#footer_a_propos {
   gap: 50px;
 }
 
+.ExplicationTitre{
+  text-align: center;
+  font-size: 2.25rem;
+}
+
 #ExplicationsContenant {
   width: 60%;
 
-  border: 2px dashed cyan;
+  /* border: 2px dashed cyan; */
 }
 
 
@@ -393,11 +398,11 @@ div#footer_a_propos {
 }
 
 #Projet1Image:hover{
-    box-shadow: 2px 2px 20px 20px white;
+    box-shadow: 2px 2px 20px 20px  rgb(255, 94, 0);
     width: 100%;
 }
 #Projet2Image:hover{
-   box-shadow: 2px 2px 20px 20px rgb(255, 0, 217);
+   box-shadow: 2px 2px 20px 20px  rgb(21, 255, 0);
    width: 100%;
 }
 #Projet3Image:hover{
@@ -440,7 +445,7 @@ div#footer_a_propos {
 }
 
 .LigneAccrocheContenant-Lien{
-  background-image: linear-gradient(144deg,white , rgb(255, 0, 217) 50%,rgb(0, 64, 255));
+  background-image: linear-gradient(144deg, rgb(255, 94, 0) , rgb(21, 255, 0) 50%,rgb(0, 64, 255));
   box-shadow: blue -1px 0px 20px 2px;
   border: 0;
   border-radius: 8px;
@@ -448,7 +453,7 @@ div#footer_a_propos {
   transition: .25s;
 }
 .LigneAccrocheContenant-Lien:hover {
-  background-image: linear-gradient(288deg,white, rgb(255, 0, 217) 50%,rgb(0, 64, 255));
+  background-image: linear-gradient(288deg, rgb(255, 94, 0) , rgb(21, 255, 0) 50%,rgb(0, 64, 255));
 
 }
 
