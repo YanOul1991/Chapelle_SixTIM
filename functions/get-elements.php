@@ -23,8 +23,37 @@ function get_nav($class_prefix)
  * @return html 
  */
 function get_project_card($class_prefix)
-{ ?>
-  <h1 class="<?php echo $class_prefix; ?>-title"><?php the_title(); ?></h1>
-  <?php the_content() ?>
-  <a href="<?php the_permalink() ?>">Voir plus</a>
-<?php }
+{
+    // Récupérer la première catégorie du post
+    $categories = get_the_category();
+    $cat_slug = $categories ? $categories[0]->slug : '';
+    
+    // Associer une image selon la catégorie
+    switch ($cat_slug) {
+        case 'arcade':
+            $image = '/images/manetteDeJeu.png';
+            break;
+        case 'finissants':
+            $image = '/images/chapeauGraduation.png';
+            break;
+        case 'affiches':
+            $image = '/images/pinceau2.png';
+            break;
+        default:
+            $image = '/images/chapeauGraduation.png'; // fallback
+            break;
+    }
+    ?>
+
+    <div class="iconeAnnee">
+        <img src="<?php echo esc_url( get_theme_file_uri( $image ) ); ?>" alt="Image Catégorie">
+    </div>
+
+    <div class="informationProjet">
+        <h1 class="<?php echo $class_prefix; ?>-title"><?php the_title(); ?></h1>
+        <?php the_content(); ?>
+        <a href="<?php the_permalink(); ?>">Voir plus</a>
+    </div>
+
+<?php
+}
