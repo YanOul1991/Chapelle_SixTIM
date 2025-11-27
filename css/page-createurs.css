@@ -22,7 +22,8 @@
 }
 
 .liste-createurs-item {
-  border: 2px dashed lime;
+  /* border: 2px dashed lime; */
+  background: none;
   width: 90%;
 
   display: flex;
@@ -44,6 +45,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    box-shadow: 0px 0px 5px 5px white;
   }
 }
 
@@ -57,7 +59,11 @@
 
   >* {
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    /* box-shadow: none; */
+    box-shadow: 5px 5px 5px 5px white;
+    padding: 5px;
+
   }
 }
 
@@ -96,6 +102,11 @@
     .liste-createurs-item {
       width: 40%;
       max-height: 500px;
+       background: rgba(68, 68, 68, 0.5);
+
+       * > {
+        background: gray;
+       }
     }
   
     .createur-image {
@@ -103,10 +114,13 @@
       width: 50%;
       aspect-ratio: auto;
       height: max-content;
+      > img {
+        box-shadow: none;
+      }
     }
 
     .createur-texte {
-      border: 1px dashed cyan;
+      /* border: 1px dashed cyan; */
       width: 50%;
       height: 100%;
     }
@@ -114,11 +128,13 @@
     .createur-nom {
       font-size: var(--texte-desktop-taille-sous-titre);
       flex: 1 1 25%;
+      box-shadow: none;
     }
   
     .createur-description {
       font-family: Arial, Helvetica, sans-serif;
       font-size: var(--texte-desktop-taille-principal);
       flex: 1 1 75%;
+      box-shadow: none;
     }
 }

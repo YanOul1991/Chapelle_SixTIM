@@ -1,0 +1,173 @@
+/* 
+  *
+  * Style CSS pour le header
+  *
+*/
+
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
+  height: 75px;
+  padding: 10px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 
+  ============== LOGO ==============
+*/
+
+div.main-logo {
+  width: 100px;
+  height: min-content;
+}
+
+a.custom-logo-link {
+  width: inherit;
+  height: inherit;
+}
+
+img.custom-logo {
+  display: block;
+  width: inherit;
+  height: auto;
+}
+
+/* 
+  ============== NAVIGATION ==============
+*/
+
+/* ---- Liens nav ---- */
+nav.header-menu-container {
+  position: absolute;
+  background: #484848;
+
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  translate: 100%;
+  transition: translate 200ms;
+}
+
+ul.header-menu-list {
+  position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: 1.15rem;
+}
+
+ul.header-menu-list li.menu-item{
+  background: white;
+  width: 30%;
+  height: 3rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ---- Bouton Burger ---- */
+
+#btn-burger-check {
+  display: none;
+}
+
+#btn-burger-label {
+  width: 50px;
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+#btn-burger-icon {
+  width: 100%;
+  height: 100%;
+}
+
+#btn-burger-check:checked~nav.header-menu-container {
+  translate: 0 0;
+}
+
+#btn-burger-check:checked+label#btn-burger-label {
+  z-index: 50;
+}
+
+/* 
+  ```````````````````````````````````````````````````
+  ``````````````` MEDIA QUERY DESKTOP ```````````````
+  ```````````````````````````````````````````````````
+*/
+@media screen and (min-width: 993px) {
+  header {
+    height: 125px;
+  }
+
+  div.main-logo {
+    width: 175px;
+  }
+
+  #btn-burger-label {
+    display: none;
+  }
+
+  nav.header-menu-container {
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+
+    translate: 0 0;
+  }
+
+  ul.header-menu-list {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+  }
+
+  li.menu-item {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: normal;
+  }
+}
