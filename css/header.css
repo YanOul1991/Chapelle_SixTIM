@@ -45,7 +45,7 @@ img.custom-logo {
 /* ---- Liens nav ---- */
 nav.header-menu-container {
   position: absolute;
-  background: lime;
+  background: #484848;
 
   width: 100%;
   height: 100vh;
@@ -68,6 +68,26 @@ ul.header-menu-list {
   height: 100%;
 
   font-size: 1.15rem;
+}
+
+ul.header-menu-list li.menu-item{
+  background: white;
+  width: 30%;
+  height: 3rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* ---- Bouton Burger ---- */
