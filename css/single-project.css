@@ -2,7 +2,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
-  background-image: radial-gradient(grey, black);
+  background-image: radial-gradient(#FFFFFF, #9D9D9D);
 
   display: flex;
   flex-flow: column nowrap;

@@ -69,6 +69,7 @@ body{
 
 main{
   background-color: var(--couleur-background-principal);
+  /* box-shadow: 0px 0px 5px 7px rgb(68, 17, 17) inset; */
   color: var( --texte-couleur-alternatif);
   display: flex;
   flex-flow: column nowrap;
@@ -134,6 +135,7 @@ li.menu-item:hover a{
 div.project-gallery{
   width: 70vw;
   padding: 10px;
+  padding-bottom: 2rem;
 
   display: flex;
   flex-flow: column nowrap;
@@ -154,48 +156,117 @@ ul.project-gallery-list{
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
 
-  @media (max-width:650px ) {
+@media (max-width:650px) {
+  ul.project-gallery-list {
     flex-flow: column wrap;
   }
 }
+
+/*.iconeAnnee{
+    
+}*/
+
+li.project-gallery-list-item.projet-arcade .iconeAnnee{
+    width: 17%;
+    background-color: rgb(21, 255, 0);
+    margin-top: 15%;
+    margin-right: auto;
+    padding: 1%;
+}
+
+li.project-gallery-list-item.projet-affiches .iconeAnnee{
+    width: 13%;
+    background-color: rgb(255, 94, 0);
+    margin-top: 15%;
+    margin-right: auto;
+    padding: 1%;
+}
+
+li.project-gallery-list-item.projet-finissants .iconeAnnee{
+    width: 17%;
+    background-color: rgb(0, 64, 255);
+    margin-top: 15%;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.informationProjet{
+   display: flex;
+   margin-top: 50%;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconeAnnee img{
+  width: 80%;
+  margin: 0 auto;
+}
+
 
 li.project-gallery-list-item{
    /* border: 10px solid transparent;
   border-image: url("images/3e\ annee V3.png") 30;  */
   transition: box-shadow, width 0.25s;
+  border-radius: 8%;
 
   width: 30%;
   aspect-ratio: 1 / 1.6;
+  border-radius: 8%;
 
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+
 
   background-image: url("images/Affiche-jeu-Hachiman.jpg");
   background-size: cover;
   background-repeat:no-repeat;
 
 }
-li.project-gallery-list-item:hover{
-  box-shadow: 2px 2px 20px 2px white;
+
+li.project-gallery-list-item.projet-arcade:hover{
+  box-shadow: 2px 2px 20px 20px rgb(21, 255, 0);
   width: 31%;
 }
+li.project-gallery-list-item.projet-affiches:hover{
+  box-shadow: 2px 2px 20px 20px rgb(255, 94, 0);
+  width: 31%;
+}
+li.project-gallery-list-item.projet-finissants:hover{
+  box-shadow: 2px 2px 20px 20px rgb(0, 64, 255);
+  width: 31%;
+}
+ 
 
 h1.project-gallery-list-item-title{
   font-family: var(--texte-font-principal);
-  /* opacity: 25%; */
+  opacity: 0;
   font-size: 1.5rem;
   text-align: center;
-
-  /* transition: opacity 0.25s; */
+ 
+  transition: opacity 0.25s;
 }
-h1.project-gallery-list-item-title:hover{
-  /* opacity: 1; */
+li.project-gallery-list-item:hover h1.project-gallery-list-item-title{
+  opacity: 1;
   font-size: 1.5rem;
   text-align: center;
 }
+ 
+h1.project-gallery-list-item-title~a{
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+ 
+li.project-gallery-list-item:hover h1.project-gallery-list-item-title~a{
+  opacity: 1;
+  font-size: 1.5rem;
+  text-align: center;
+}
+ 
 
 /* ==================== PARTIE HEADER ==================== */
 .header-menu-list{
@@ -215,6 +286,7 @@ div#footer_complet {
   font-size: clamp(6px, 1.2vw, 16px);
   /* border: 2px dashed orange; */
 
+  padding-top: 1rem;
   padding: 15px;
   display: flex;
   flex-flow: row nowrap;
@@ -264,8 +336,8 @@ div#footer_central {
 div#footer_logo_contenant {
   /* border: 2px dashed yellow; */
 
-  width:75%;
-  height:100%;
+  width:20%;
+  height:20%;
 
   display: flex;
   flex-flow: column nowrap;
@@ -282,13 +354,22 @@ div#footer_logo_contenant {
 
 div#footer_social_contenant {
   /* border: 2px dashed yellow; */
-
+  width:75%;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 
   gap: 10px;
+}
+
+.footer_social{
+   width:10%;
+}
+
+.footer_social_img{
+  width:100%;
+  height:100%;
 }
 
 div#footer_legal_contenant {
@@ -328,20 +409,25 @@ div#footer_a_propos {
   gap: 50px;
 }
 
+.ExplicationTitre{
+  text-align: center;
+  font-size: 2.25rem;
+}
+
 #ExplicationsContenant {
   width: 60%;
 
-  border: 2px dashed cyan;
+  /* border: 2px dashed cyan; */
 }
 
-#ProjetsContenant {
 
+#ProjetsContenant {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 
-  border: 2px dashed green;
+  /* border: 2px dashed green; */
   gap: 20px;
 }
 
@@ -352,19 +438,35 @@ div#footer_a_propos {
   justify-content: center;
   align-items: center;
 
-  border: 2px dashed blue;
+  /* border: 2px dashed blue; */
   gap: 10px;
 }
 
 .ProjetImageContenant{
   width: 90%;
   box-sizing: border-box;
-  border: 2px solid rgba(0,0,0,0.12);
+  /* border: 2px solid rgba(0,0,0,0.12); */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   aspect-ratio: 2 / 3; /*Les images sont verticales*/
+  border-radius: 8%;
+
+  transition: box-shadow, width 0.25s;
+}
+
+#Projet1Image:hover{
+    box-shadow: 2px 2px 20px 20px  rgb(255, 94, 0);
+    width: 100%;
+}
+#Projet2Image:hover{
+   box-shadow: 2px 2px 20px 20px  rgb(21, 255, 0);
+   width: 100%;
+}
+#Projet3Image:hover{
+    box-shadow: 2px 2px 20px 20px rgb(0, 64, 255);
+    width: 100%;
 }
 
 .ProjetImageContenant img{
@@ -376,17 +478,21 @@ div#footer_a_propos {
 
 .ProjetTexteContenant{
   width: 90%;
-  border: 2px dashed orange;
-}
-
-.ProjetTitre{
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  /* border: 2px dashed orange; */
   text-align: center;
 }
 
+.ProjetTitre{
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+
+.ProjetTexte{
+  text-align: justify;
+}
+
 #LignesAccrochesContenant{
-  width: 60%;
+  /* width: 60%; */
   display:flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -394,8 +500,198 @@ div#footer_a_propos {
   text-align:center;
 
   gap: 10px;
-  border: 2px dashed lime;
+  /* border: 2px dashed lime; */
 }
+
+/* .LigneAccrocheContenant-Lien{
+  background-image: linear-gradient(144deg, rgb(255, 94, 0) , rgb(21, 255, 0) 50%,rgb(0, 64, 255));
+  box-shadow: blue -1px 0px 20px 2px;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.25rem;
+  transition: .25s;
+} */
+.LigneAccrocheContenant-Lien,
+.LigneAccrocheContenant-Lien--wrapper {
+  clip-path: polygon(0px calc(100% - 25px),
+    5px calc(100% - 25px),
+    5px calc(100% - 15px),
+    10px calc(100% - 15px),
+    10px calc(100% - 10px),
+    15px calc(100% - 10px),
+    15px calc(100% - 5px),
+    25px calc(100% - 5px),
+    25px 100%,
+    calc(100% - 25px) 100%,
+    calc(100% - 25px) calc(100% - 5px),
+    calc(100% - 15px) calc(100% - 5px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 15px),
+    calc(100% - 5px) calc(100% - 15px),
+    calc(100% - 5px) calc(100% - 25px),
+    100% calc(100% - 25px),
+    100% 25px,
+    calc(100% - 5px) 25px,
+    calc(100% - 5px) 15px,
+    calc(100% - 10px) 15px,
+    calc(100% - 10px) 10px,
+    calc(100% - 15px) 10px,
+    calc(100% - 15px) 5px,
+    calc(100% - 25px) 5px,
+    calc(100% - 25px) 0px,
+    25px 0px,
+    25px 5px,
+    15px 5px,
+    15px 10px,
+    10px 10px,
+    10px 15px,
+    5px 15px,
+    5px 25px,
+    0px 25px);
+  position: relative;
+}
+.LigneAccrocheContenant-Lien {
+  border: 5px solid transparent;
+}
+.LigneAccrocheContenant-Lien--wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+.LigneAccrocheContenant-Lien--wrapper .LigneAccrocheContenant-Lien {
+  display: block;
+  clip-path: polygon(5px 25px,
+    10px 25px,
+    10px 15px,
+    15px 15px,
+    15px 10px,
+    25px 10px,
+    25px 5px,
+    calc(100% - 25px) 5px,
+    calc(100% - 25px) 10px,
+    calc(100% - 15px) 10px,
+    calc(100% - 15px) 15px,
+    calc(100% - 10px) 15px,
+    calc(100% - 10px) 25px,
+    calc(100% - 5px) 25px,
+    calc(100% - 5px) calc(100% - 25px),
+    calc(100% - 10px) calc(100% - 25px),
+    calc(100% - 10px) calc(100% - 15px),
+    calc(100% - 15px) calc(100% - 15px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(100% - 25px) calc(100% - 10px),
+    calc(100% - 25px) calc(100% - 5px),
+    25px calc(100% - 5px),
+    25px calc(100% - 10px),
+    15px calc(100% - 10px),
+    15px calc(100% - 15px),
+    10px calc(100% - 15px),
+    10px calc(100% - 25px),
+    5px calc(100% - 25px));
+}
+.LigneAccrocheContenant-Lien::after,
+.LigneAccrocheContenant-Lien--wrapper::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0px calc(100% - 25px),
+    5px calc(100% - 25px),
+    5px calc(100% - 15px),
+    10px calc(100% - 15px),
+    10px calc(100% - 10px),
+    15px calc(100% - 10px),
+    15px calc(100% - 5px),
+    25px calc(100% - 5px),
+    25px 100%,
+    calc(100% - 25px) 100%,
+    calc(100% - 25px) calc(100% - 5px),
+    calc(100% - 15px) calc(100% - 5px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 15px),
+    calc(100% - 5px) calc(100% - 15px),
+    calc(100% - 5px) calc(100% - 25px),
+    100% calc(100% - 25px),
+    100% 25px,
+    calc(100% - 5px) 25px,
+    calc(100% - 5px) 15px,
+    calc(100% - 10px) 15px,
+    calc(100% - 10px) 10px,
+    calc(100% - 15px) 10px,
+    calc(100% - 15px) 5px,
+    calc(100% - 25px) 5px,
+    calc(100% - 25px) 0px,
+    25px 0px,
+    25px 5px,
+    15px 5px,
+    15px 10px,
+    10px 10px,
+    10px 15px,
+    5px 15px,
+    5px 25px,
+    0px 25px,
+    0px 50%,
+    5px 50%,
+    5px 25px,
+    10px 25px,
+    10px 15px,
+    15px 15px,
+    15px 10px,
+    25px 10px,
+    25px 5px,
+    calc(100% - 25px) 5px,
+    calc(100% - 25px) 10px,
+    calc(100% - 15px) 10px,
+    calc(100% - 15px) 15px,
+    calc(100% - 10px) 15px,
+    calc(100% - 10px) 25px,
+    calc(100% - 5px) 25px,
+    calc(100% - 5px) calc(100% - 25px),
+    calc(100% - 10px) calc(100% - 25px),
+    calc(100% - 10px) calc(100% - 15px),
+    calc(100% - 15px) calc(100% - 15px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(100% - 25px) calc(100% - 10px),
+    calc(100% - 25px) calc(100% - 5px),
+    25px calc(100% - 5px),
+    25px calc(100% - 10px),
+    15px calc(100% - 10px),
+    15px calc(100% - 15px),
+    10px calc(100% - 15px),
+    10px calc(100% - 25px),
+    5px calc(100% - 25px),
+    5px 50%,
+    0px 50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(144deg, rgb(255, 94, 0) , rgb(21, 255, 0) 50%,rgb(0, 64, 255));
+  display: block;
+  pointer-events: none;
+}
+.LigneAccrocheContenant-Lien::after {
+  margin: -5px;
+}
+.LigneAccrocheContenant-Lien:hover {
+  background-image: linear-gradient(144deg, rgb(255, 94, 0) , rgb(21, 255, 0) 50%,rgb(0, 64, 255));
+
+}
+
+.LigneAccrocheContenant-Lien:hover .LigneAccroche-LienProjet{
+  background: none;
+}
+
+.LigneAccroche-LienProjet{
+  background-color: #181818;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: .25s;
+}
+.LigneAccrocheContenant-Lien a{
+  text-decoration: none;
+}
+
+
 
 #GalerieImagesContenant{
   width: 95%;
@@ -412,7 +708,7 @@ grid-row-gap: 8px;
 .ImageItem{
   width: 100%;
   height: auto;
-  border:2px dashed red;
+  /* border:2px dashed red; */
   overflow: hidden;
 }
 
