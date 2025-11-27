@@ -1,0 +1,140 @@
+/*
+  Style CSS pour la page des createurs
+*/
+
+.createurs {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+}
+
+.liste-createurs {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 50px;
+  width: 90vw;
+}
+
+.liste-createurs-item {
+  /* border: 2px dashed lime; */
+  background: none;
+  width: 90%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
+  padding: 25px;
+}
+
+.createur-image {
+  order: -1;
+  width: 50%;
+  aspect-ratio: 12 / 16;
+
+  > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px 5px white;
+  }
+}
+
+.createur-texte {
+  max-width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  >* {
+    width: 100%;
+    /* border: 1px solid red; */
+    /* box-shadow: none; */
+    box-shadow: 5px 5px 5px 5px white;
+    padding: 5px;
+
+  }
+}
+
+.createur-nom{
+  font-size: var(--texte-mobile-taille-sous-titre);
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.createur-description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--texte-mobile-taille-principal);
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 993px) {
+  .createur-image {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .liste-createurs {
+      flex-flow: row wrap;
+      gap: 0;
+      padding: 0;
+      gap: 50px;
+    }
+  
+    .liste-createurs-item {
+      width: 40%;
+      max-height: 500px;
+       background: rgba(68, 68, 68, 0.5);
+
+       * > {
+        background: gray;
+       }
+    }
+  
+    .createur-image {
+      order: 0;
+      width: 50%;
+      aspect-ratio: auto;
+      height: max-content;
+      > img {
+        box-shadow: none;
+      }
+    }
+
+    .createur-texte {
+      /* border: 1px dashed cyan; */
+      width: 50%;
+      height: 100%;
+    }
+
+    .createur-nom {
+      font-size: var(--texte-desktop-taille-sous-titre);
+      flex: 1 1 25%;
+      box-shadow: none;
+    }
+  
+    .createur-description {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: var(--texte-desktop-taille-principal);
+      flex: 1 1 75%;
+      box-shadow: none;
+    }
+}

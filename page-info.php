@@ -7,6 +7,7 @@
   <section id="PageInfo">
   <!-- Partie paragraphe d'explications -->
     <section id="ExplicationsContenant">
+      <h2 class="ExplicationTitre">ExpoTIM</h2>
       <p id="ExplicationsTexte">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
@@ -43,7 +44,7 @@
       </div>
       <div id="Projet2" class="ProjetBox">
         <div id="Projet2Image" class="ProjetImageContenant">
-          <img src="https://placehold.co/100x100" alt="Projet 2 Image">
+          <img src="http://localhost/chapelle_SixTim/wp-content/uploads/2025/11/Affiche-jeu-Hachiman.jpg" alt="Projet 2 Image">
         </div>
         <div id="Projet2TexteContenant" class="ProjetTexteContenant">
           <h3 class="ProjetTitre"> 
@@ -109,9 +110,11 @@
           $projets_link = '#';
         endif;
       ?>
+      <section class="LigneAccrocheContenant-Lien">
       <a href="<?php echo esc_url( $projets_link ); ?>">
-        <p class="LigneAccroche">Découvrez nos projets innovants</p>
+        <p class="LigneAccroche-LienProjet">Découvrez nos projets innovants</p>
       </a>
+      </section>
       <p class="LigneAccroche">Inspirez-vous avec nos réalisations</p>
     </section>
 
