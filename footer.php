@@ -1,17 +1,3 @@
-    <?php $icone_1_img = get_theme_mod("social_1_icon", "http://localhost:81/4w4/wp-content/uploads/2025/02/25231.png") ?>
-    <?php $icone_1_url = get_theme_mod("social_1_url", "Default") ?>
-    <?php $icone_1_name = get_theme_mod("social_1_name", "Default") ?>
-    <?php $icone_2_img = get_theme_mod("social_2_icon", "http://localhost:81/4w4/wp-content/uploads/2025/02/77364-instagram-icons-computer-black-logo-white-wine_600x600.png") ?>
-    <?php $icone_2_url = get_theme_mod("social_2_url", "Default") ?>
-    <?php $icone_2_name = get_theme_mod("social_2_name", "Default") ?>
-    <?php $icone_3_img = get_theme_mod("social_3_icon", "FacebookIconBlack.png") ?>
-    <?php $icone_3_url = get_theme_mod("social_3_url", "Default") ?>
-    <?php $icone_3_name = get_theme_mod("social_3_name", "Default") ?>
-    <?php $icone_4_img = get_theme_mod("social_4_icon", "5a2fe479cc45e43754640849.png") ?>
-    <?php $icone_4_url = get_theme_mod("social_4_url", "Default") ?>
-    <?php $icone_4_name = get_theme_mod("social_4_name", "Default") ?>
-
-
 
 
 <div id="footer_complet">
@@ -26,25 +12,54 @@
 
     <div id="footer_logo_contenant"> <!-- L'image logo -->
       <div class="footer_logo">
-        <?php the_custom_logo(); ?>
+        <!-- Le logo du site wordpress --> 
+        <?php
+if ( function_exists('has_custom_logo') && has_custom_logo() ) {
+  echo get_custom_logo();
+} else {
+  echo '<!-- Pas de logo défini ou le thème n\'a pas ajouté le support -->';
+}
+?>
       </div>
     </div>
     
     <div id="footer_social_contenant"> <!-- Les liens vers réseaux sociaux | Customizer -->
-      <div class="social-links">
-        <a href="<?php echo $icone_1_url ?>">
-          <img class="social-links-icon" src="<?php echo $icone_1_img ?>" alt="<?php echo $icone_1_name ?>" width="32" height="32">
-        </a>
-        <a href="<?php echo $icone_2_url ?>">
-          <img class="social-links-icon" src="<?php echo $icone_2_img ?>" alt="<?php echo $icone_2_name ?>" width="32" height="32">
-        </a>
-        <a href="<?php echo $icone_3_url ?>">
-          <img class="social-links-icon" src="<?php echo $icone_3_img ?>" alt="<?php echo $icone_3_name ?>" width="32" height="32">
-        </a>
-        <a href="<?php echo $icone_4_url ?>">
-          <img class="social-links-icon" src="<?php echo $icone_4_img ?>" alt="<?php echo $icone_4_name ?>" width="32" height="32">
-        </a>
-      </div>
+        <?php
+        // Boucle : tous les articles de la catégorie 'media'
+        $media_query = new WP_Query([
+          'category_name'  => 'media',
+          'posts_per_page' => -1,
+          'post_status'    => 'publish',
+        ]);
+
+        if ( $media_query->have_posts() ) :
+          while ( $media_query->have_posts() ) : $media_query->the_post();
+            $post_id = get_the_ID();
+
+            // media_url 
+            $media_url = function_exists('get_field') ? get_field('media_url', $post_id) : '';
+            if ( empty($media_url) ) { $media_url = get_post_meta($post_id, 'media_url', true); }
+
+            // media_thumbnail - Retourne un URL
+            $thumb_url = function_exists('get_field') ? get_field('media_thumbnail', $post_id) : get_post_meta($post_id, 'media_thumbnail', true);
+            $thumb_alt = get_the_title($post_id);
+
+            // Si le champ ACF retourne un tableau (array) au lieu d'une URL directe (garde-fou)
+            if ( is_array($thumb_url) && ! empty($thumb_url['url']) ) {
+              $thumb_url = $thumb_url['url'];
+            }
+
+            // Assemblage du lien avec l'image miniature
+            if ( ! empty($media_url) && ! empty($thumb_url) ) : ?>
+              <a class="footer_social" href="<?php echo esc_url($media_url); ?>" target="_blank" rel="noopener noreferrer">
+                <img class="footer_social_img" src="<?php echo esc_url($thumb_url); ?>" alt="<?php echo esc_attr($thumb_alt); ?>" />
+              </a>
+            <?php endif;
+
+          endwhile;
+          wp_reset_postdata();
+        endif;
+        ?>
     </div>
     
     <div id="footer_legal_contenant"> <!-- Mention légal -->
