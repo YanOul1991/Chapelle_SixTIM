@@ -40,8 +40,10 @@
             <img src="https://placehold.co/600x400" alt="Visuel tout les projets">
           </div>
           <div class="accueil-projets-description">
+            <section class="michel">
             <h2 class="accueil-projets-description-titre"><?php echo $cat->name ?></h2>
             <h3 class="accueil-projets-description-paragraphe"><?php echo $cat->description ?></h3>
+            </section>
           </div>
         </a>
     <?php
