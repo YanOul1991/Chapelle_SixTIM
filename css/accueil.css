@@ -235,6 +235,7 @@
   }
 
   .accueil-projets-visuel {
+    display: flex;
     width: 100%;
     height: fit-content;
     aspect-ratio: auto;
@@ -242,17 +243,16 @@
     > img {
       width: 100%;
       height: auto;
+      border: black solid 1px;
     }
   }
 
   .accueil-projets-description {
     position: absolute;
     background: black;
-    right: 15px;
     bottom: 15px;
     width: 90%;
     padding:10px;
 
-    align-items: flex-end;
   }
 }
