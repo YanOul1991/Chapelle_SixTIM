@@ -45,9 +45,19 @@ function get_project_card($class_prefix)
     }
     ?>
 
+    <?php
+      $thumb_url = get_the_post_thumbnail_url( get_the_ID(), 'full' );
+      if ( ! $thumb_url ) {
+        $thumb_url = 'https://placehold.co/50x100';
+      }
+    ?>
+
+
     <div class="iconeAnnee">
         <img src="<?php echo esc_url( get_theme_file_uri( $image ) ); ?>" alt="Image Catégorie">
     </div>
+
+    <img src="<?php echo esc_url( $thumb_url ); ?>" alt="Image Catégorie" class="categorie-image" />
 
     <div class="informationProjet">
         <h1 class="<?php echo $class_prefix; ?>-title"><?php the_title(); ?></h1>
