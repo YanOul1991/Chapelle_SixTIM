@@ -69,7 +69,6 @@
 }
 
 .createur-nom{
-  border: 2px dashed pink;
   font-size: var(--texte-mobile-taille-sous-titre);
 
   display: flex;
@@ -79,7 +78,6 @@
 }
 
 .createur-description {
-  border: 2px dashed orange;
   font-family: Arial, Helvetica, sans-serif;
   font-size: var(--texte-desktop-taille-petit);
 
