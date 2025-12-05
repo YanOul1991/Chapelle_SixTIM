@@ -13,7 +13,7 @@
 
 .liste-createurs {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 
@@ -24,7 +24,7 @@
 .liste-createurs-item {
   /* border: 2px dashed lime; */
   background: none;
-  width: 40%;
+  width: 90%;
 
   display: flex;
   flex-flow: row nowrap;
@@ -56,7 +56,6 @@
   justify-content: center;
   align-items: center;
   gap: 25px;
-  
 
   >* {
     width: 100%;
@@ -69,19 +68,17 @@
 }
 
 .createur-nom{
-  border: 2px dashed pink;
   font-size: var(--texte-mobile-taille-sous-titre);
 
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .createur-description {
-  border: 2px dashed orange;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: var(--texte-desktop-taille-petit);
+  font-size: var(--texte-mobile-taille-principal);
 
   display: flex;
   flex-flow: column nowrap;
@@ -104,7 +101,7 @@
   
     .liste-createurs-item {
       width: 40%;
-      height:400px;
+      max-height: 500px;
        background: rgba(68, 68, 68, 0.5);
 
        * > {

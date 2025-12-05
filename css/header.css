@@ -42,8 +42,59 @@ img.custom-logo {
   ============== NAVIGATION ==============
 */
 
+.header-navigation {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+
+  margin-right: 250px;
+
+  * {
+    font-size: var(--texte-mobile-taille-principal);
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+}
+
+.navigation-drop {
+  position: relative;
+  width: 150px;
+  height: max-content;
+}
+
+.navigation-drop-list {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  border: 1px solid cyan;
+  width: inherit;
+
+  overflow-y: hidden;
+  max-height: 0;
+
+  transition: all 500ms;
+
+  a {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.navigation-drop:hover .navigation-drop-list {
+  max-height: none;
+}
+
 /* ---- Liens nav ---- */
-nav.header-menu-container {
+/* nav.header-menu-container {
   position: absolute;
   background: #484848;
 
@@ -88,7 +139,7 @@ ul.header-menu-list li.menu-item{
     justify-content: center;
     align-items: center;
   }
-}
+} */
 
 /* ---- Bouton Burger ---- */
 
