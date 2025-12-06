@@ -11,8 +11,8 @@ header {
   z-index: 1000;
   height: 75px;
   padding: 10px;
-      box-shadow: rgb(127 183 255 / 0%) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgb(0 48 149 / 4%) 0px 3px 3px -1.5px, rgb(7 62 179 / 4%) 0px 6px 6px -3px, rgb(8 71 153) 0px 12px 12px -6px, rgb(92 147 217) 0px 24px 24px -12px;
-
+  box-shadow: rgb(127 183 255 / 0%) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgb(0 48 149 / 4%) 0px 3px 3px -1.5px, rgb(7 62 179 / 4%) 0px 6px 6px -3px, rgb(8 71 153) 0px 12px 12px -6px, rgb(92 147 217) 0px 24px 24px -12px;
+ 
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -72,6 +72,7 @@ ul.header-menu-list {
 }
 
 ul.header-menu-list li.menu-item{
+  /* background: white; */
   width: 30%;
   height: 3rem;
 
@@ -87,7 +88,17 @@ ul.header-menu-list li.menu-item{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    transition: .25s;
   }
+}
+#menu-item-371 a:hover{
+  color: rgb(0, 64, 255);
+}
+#menu-item-370 a:hover{
+  color: rgb(21, 255, 0);
+}
+#menu-item-360 a:hover{
+  color: rgb(255, 94, 0);
 }
 
 /* ---- Bouton Burger ---- */
@@ -128,7 +139,7 @@ ul.header-menu-list li.menu-item{
 */
 @media screen and (min-width: 993px) {
   header {
-    height: 125px;
+    height: 80px;
   }
 
   div.main-logo {
