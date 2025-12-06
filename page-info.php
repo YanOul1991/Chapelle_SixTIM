@@ -121,10 +121,10 @@
       ?>
       <section class="LigneAccrocheContenant-Lien">
       <a href="<?php echo esc_url( $projets_link ); ?>">
-        <p class="LigneAccroche-LienProjet">Découvrez nos projets innovants</p>
+        <p class="LigneAccroche-LienProjet">- Découvrez nos projets innovants -</p>
       </a>
       </section>
-      <p class="LigneAccroche">Inspirez-vous avec nos réalisations</p>
+      <h1 class="LigneAccroche">Inspirez-vous avec nos réalisations ci-dessous</h1>
     </section>
 
   <!-- Partie gallerie images -->
