@@ -20,7 +20,7 @@
           <img src="/images/pinceau2.png" alt="Image Catégorie">
         </div>
         <div id="Projet1Image" class="ProjetImageContenant">
-          <img src="https://placehold.co/100x100" alt="Projet 1 Image">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/pinceau2.png" alt="Image Graphisme">
         </div>
         <div id="Projet1TexteContenant" class="ProjetTexteContenant">
           <h3 class="ProjetTitre">
@@ -50,7 +50,7 @@
           <img src="/images/manetteDeJeu.png" alt="Image Catégorie">
         </div>
         <div id="Projet2Image" class="ProjetImageContenant">
-          <img src="http://localhost/chapelle_SixTim/wp-content/uploads/2025/11/Affiche-jeu-Hachiman.jpg" alt="Projet 2 Image">
+         <img src="<?php echo get_template_directory_uri(); ?>/images/manetteDeJeu.png" alt="Image arcade">
         </div>
         <div id="Projet2TexteContenant" class="ProjetTexteContenant">
           <h3 class="ProjetTitre"> 
@@ -80,7 +80,7 @@
           <img src="/images/chapeauGraduation.png" alt="Image Catégorie">
         </div>
         <div id="Projet3Image" class="ProjetImageContenant">
-          <img src="https://placehold.co/100x100" alt="Projet 3 Image">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/chapeauGraduation.png" alt="Image finissant">
         </div>
         <div id="Projet3TexteContenant" class="ProjetTexteContenant">
           <h3 class="ProjetTitre">
