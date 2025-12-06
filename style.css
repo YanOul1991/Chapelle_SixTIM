@@ -456,13 +456,13 @@ div#footer_a_propos {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  aspect-ratio: 2 / 3; /*Les images sont verticales*/
+  aspect-ratio: 2 / 2.5; /*Les images sont verticales*/
   border-radius: 8%;
 
   transition: box-shadow, width 0.25s;
 }
 
-#Projet1Image:hover{
+/*#Projet1Image:hover{
     box-shadow: 2px 2px 20px 20px  rgb(255, 94, 0);
     width: 100%;
 }
@@ -473,11 +473,21 @@ div#footer_a_propos {
 #Projet3Image:hover{
     box-shadow: 2px 2px 20px 20px rgb(0, 64, 255);
     width: 100%;
+}*/
+#Projet1 .ProjetTitre {
+    color: rgb(255, 94, 0);
+}
+
+#Projet2 .ProjetTitre {
+    color: rgb(21, 255, 0);
+}
+
+#Projet3 .ProjetTitre {
+    color: rgb(0, 64, 255);
 }
 
 .ProjetImageContenant img{
   width: 100%;
-  height: 100%;
   object-fit: cover;
   display: block;
 }
