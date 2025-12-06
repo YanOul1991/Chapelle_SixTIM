@@ -210,7 +210,7 @@ li.project-gallery-list-item.projet-finissants .iconeAnnee{
 
 .informationProjet{
   display: flex;
-  margin-top: 50%;
+  margin-top: 80%;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
