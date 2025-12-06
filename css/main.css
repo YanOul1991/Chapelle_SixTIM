@@ -46,7 +46,7 @@
   --texte-couleur-sous-titre-principal: #000000;
 
   /* Général | Défault, etc. */
-  --couleur-background-principal: #8c603e; 
+  --couleur-background-principal: linear-gradient(120deg, rgb(167, 61, 0) 27%, rgb(15, 175, 0) 33%,rgb(15, 175, 3) 66%, rgb(0, 47, 190)75%); 
   --couleur-background-secondaire: #DEDEDE; 
 }
 
