@@ -4,7 +4,13 @@
   <?php if (have_posts()) : the_post(); ?>
     <h1 class="single-project-titre single-project-texte-item"><?php print_r(get_field('projet_nom')); ?></h1>
     <h1 class="single-project-type single-project-texte-item"><?php print_r(get_field('projet_cours')['label']); ?></h1>
-    <img class="single-project-thumbnail" src="https://placehold.co/500x500/FF9900/FFFFFF" alt="Projet Thumbnail">
+    <?php
+      $thumb_url = get_the_post_thumbnail_url( get_the_ID(), 'full' );
+      if ( ! $thumb_url ) {
+        $thumb_url = 'https://placehold.co/800x600';
+      }
+    ?>
+    <img class="single-project-thumbnail" src="<?php echo esc_url( $thumb_url ); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>">
     
     <?php
     $query = new WP_Query([

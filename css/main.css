@@ -46,7 +46,7 @@
   --texte-couleur-sous-titre-principal: #000000;
 
   /* Général | Défault, etc. */
-  --couleur-background-principal: #9D9D9D; 
+  --couleur-background-principal: linear-gradient(120deg, rgb(167, 61, 0) 27%, rgb(15, 175, 0) 33%,rgb(15, 175, 3) 66%, rgb(0, 47, 190)75%); 
   --couleur-background-secondaire: #DEDEDE; 
 }
 
@@ -91,9 +91,9 @@
 
   /* Tailles texte desktop */
   --texte-desktop-taille-titre: 50px;
-  --texte-desktop-taille-sous-titre: 32px;
-  --texte-desktop-taille-principal: 20px;
-  --texte-desktop-taille-petit: 12px;
+  --texte-desktop-taille-sous-titre: 24px;
+  --texte-desktop-taille-principal: 16px;
+  --texte-desktop-taille-petit: 10px;
 
   /* Poids */
   --texte-poids-titre: Bolder;

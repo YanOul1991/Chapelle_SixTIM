@@ -1,3 +1,5 @@
+<!-- NE SERT PLUS À RIEN -->
+
 <?php get_header() ?>
 <?php
 $queryArgs = array(
@@ -12,10 +14,20 @@ $queryPost = new WP_Query($queryArgs);
 <div class="project-gallery">
     <h2 class="project-gallery-title">Tout les projets etudiants.</h2>
     <ul class="project-gallery-list">
+
+    
       <?php if ($queryPost->have_posts()) : while ($queryPost->have_posts()) : $queryPost->the_post(); ?>
-          <li class="project-gallery-list-item">
+
+      <?php
+      $thumb_url = get_the_post_thumbnail_url( get_the_ID(), 'full' );
+      if ( ! $thumb_url ) {
+        $thumb_url = 'https://placehold.co/800x600';
+      }
+      ?>
+      
+          <img class="project-gallery-list-item" src="<?php echo esc_url($thumb_url); ?>">
             <?php get_project_card("project-gallery-list-item"); ?>
-          </li>
+          </img>
           <?php endwhile;
       endif; ?>
     </ul>

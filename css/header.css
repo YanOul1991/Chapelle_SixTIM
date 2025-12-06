@@ -87,7 +87,17 @@ ul.header-menu-list li.menu-item{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    transition: .25s;
   }
+}
+#menu-item-371 a:hover{
+  color: rgb(0, 64, 255);
+}
+#menu-item-370 a:hover{
+  color: rgb(21, 255, 0);
+}
+#menu-item-360 a:hover{
+  color: rgb(255, 94, 0);
 }
 
 /* ---- Bouton Burger ---- */
@@ -128,7 +138,7 @@ ul.header-menu-list li.menu-item{
 */
 @media screen and (min-width: 993px) {
   header {
-    height: 125px;
+    height: 80px;
   }
 
   div.main-logo {
