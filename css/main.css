@@ -91,9 +91,9 @@
 
   /* Tailles texte desktop */
   --texte-desktop-taille-titre: 50px;
-  --texte-desktop-taille-sous-titre: 32px;
-  --texte-desktop-taille-principal: 20px;
-  --texte-desktop-taille-petit: 12px;
+  --texte-desktop-taille-sous-titre: 24px;
+  --texte-desktop-taille-principal: 16px;
+  --texte-desktop-taille-petit: 10px;
 
   /* Poids */
   --texte-poids-titre: Bolder;
