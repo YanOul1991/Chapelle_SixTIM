@@ -215,7 +215,7 @@ li.project-gallery-list-item.projet-finissants .iconeAnnee{
 li.project-gallery-list-item{
    /* border: 10px solid transparent;
   border-image: url("images/3e\ annee V3.png") 30;  */
-  transition: box-shadow, width 0.25s;
+  transition: 0.25s;
   border-radius: 8%;
 
   width: 20%;
@@ -459,7 +459,7 @@ div#footer_a_propos {
   aspect-ratio: 2 / 3; /*Les images sont verticales*/
   border-radius: 8%;
 
-  transition: box-shadow, width 0.25s;
+  transition: 0.25s;
 }
 
 #Projet1Image:hover{
