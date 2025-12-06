@@ -7,6 +7,7 @@
 header {
   position: sticky;
   top: 0;
+  background: white;
   background-color: rgb(0, 22, 119);
   z-index: 1000;
   height: 75px;
@@ -95,7 +96,7 @@ img.custom-logo {
 }
 
 /* ---- Liens nav ---- */
-/* nav.header-menu-container {
+ nav.header-menu-container {
   position: absolute;
   background: #484848;
 
