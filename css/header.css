@@ -7,10 +7,11 @@
 header {
   position: sticky;
   top: 0;
-  background: white;
+  background-color: rgb(0, 22, 119);
   z-index: 1000;
   height: 75px;
   padding: 10px;
+      box-shadow: rgb(127 183 255 / 0%) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgb(0 48 149 / 4%) 0px 3px 3px -1.5px, rgb(7 62 179 / 4%) 0px 6px 6px -3px, rgb(8 71 153) 0px 12px 12px -6px, rgb(92 147 217) 0px 24px 24px -12px;
 
   display: flex;
   flex-flow: row nowrap;
@@ -42,8 +43,59 @@ img.custom-logo {
   ============== NAVIGATION ==============
 */
 
+.header-navigation {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+
+  margin-right: 250px;
+
+  * {
+    font-size: var(--texte-mobile-taille-principal);
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+}
+
+.navigation-drop {
+  position: relative;
+  width: 150px;
+  height: max-content;
+}
+
+.navigation-drop-list {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  border: 1px solid cyan;
+  width: inherit;
+
+  overflow-y: hidden;
+  max-height: 0;
+
+  transition: all 500ms;
+
+  a {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.navigation-drop:hover .navigation-drop-list {
+  max-height: none;
+}
+
 /* ---- Liens nav ---- */
-nav.header-menu-container {
+/* nav.header-menu-container {
   position: absolute;
   background: #484848;
 
@@ -71,7 +123,6 @@ ul.header-menu-list {
 }
 
 ul.header-menu-list li.menu-item{
-  background: white;
   width: 30%;
   height: 3rem;
 
@@ -87,8 +138,9 @@ ul.header-menu-list li.menu-item{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    transition: .25s;
   }
-}
+} */
 
 /* ---- Bouton Burger ---- */
 
@@ -128,7 +180,7 @@ ul.header-menu-list li.menu-item{
 */
 @media screen and (min-width: 993px) {
   header {
-    height: 125px;
+    height: 80px;
   }
 
   div.main-logo {
