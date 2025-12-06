@@ -44,9 +44,11 @@ a{
   text-decoration: none;
   color: white;
 }
+
+
 header a{
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 header a:hover{
   color: black;
@@ -68,7 +70,8 @@ body{
 }
 
 main{
-  background-color: var(--couleur-background-principal);
+  /*background-color: var(--couleur-background-principal);*/
+  background-color: rgb(0, 22, 119);
   /* box-shadow: 0px 0px 5px 7px rgb(68, 17, 17) inset; */
   color: var( --texte-couleur-alternatif);
   display: flex;
