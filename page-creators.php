@@ -2,7 +2,7 @@
 
 <main class="createurs">
   <?php get_caller()?>
-  <h1 class="titre-page">Createurs</h1>
+  <h1 class="titre-page">Créateurs</h1>
   <ul class="liste-createurs">
     <?php
     // Boucle : tous les articles publiés de la catégorie 'createur'
