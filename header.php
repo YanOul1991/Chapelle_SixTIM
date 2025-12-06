@@ -24,6 +24,6 @@
         <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
       </svg>
     </label>
-    <?php
-    get_nav('header'); ?>
+    <?php get_nav('header'); ?>
+    
   </header>

@@ -16,8 +16,11 @@
   <!-- Partie les trois contenants de projets -->
     <section id="ProjetsContenant">
       <div id="Projet1" class="ProjetBox">
+        <div class="iconeAnnee">
+          <img src="/images/pinceau2.png" alt="Image Catégorie">
+        </div>
         <div id="Projet1Image" class="ProjetImageContenant">
-          <img src="https://placehold.co/100x100" alt="Projet 1 Image">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/pinceau2.png" alt="Image Graphisme">
         </div>
         <div id="Projet1TexteContenant" class="ProjetTexteContenant">
           <h3 class="ProjetTitre">
@@ -43,8 +46,11 @@
         </div>
       </div>
       <div id="Projet2" class="ProjetBox">
+        <div class="iconeAnnee">
+          <img src="/images/manetteDeJeu.png" alt="Image Catégorie">
+        </div>
         <div id="Projet2Image" class="ProjetImageContenant">
-          <img src="http://localhost/chapelle_SixTim/wp-content/uploads/2025/11/Affiche-jeu-Hachiman.jpg" alt="Projet 2 Image">
+         <img src="<?php echo get_template_directory_uri(); ?>/images/manetteDeJeu.png" alt="Image arcade">
         </div>
         <div id="Projet2TexteContenant" class="ProjetTexteContenant">
           <h3 class="ProjetTitre"> 
@@ -70,8 +76,11 @@
         </div>
       </div>
       <div id="Projet3" class="ProjetBox">
+        <div class="iconeAnnee">
+          <img src="/images/chapeauGraduation.png" alt="Image Catégorie">
+        </div>
         <div id="Projet3Image" class="ProjetImageContenant">
-          <img src="https://placehold.co/100x100" alt="Projet 3 Image">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/chapeauGraduation.png" alt="Image finissant">
         </div>
         <div id="Projet3TexteContenant" class="ProjetTexteContenant">
           <h3 class="ProjetTitre">
@@ -119,39 +128,22 @@
     </section>
 
   <!-- Partie gallerie images -->
-   <!-- Grid d'images de tailles différentes -->
-    <section id="GalerieImagesContenant">
-      <div class="ImageGrid">
+  <!-- Remplace la grille statique par le contenu de l'article 'Galerie Expo' (affiche la galerie WordPress) -->
+  <section id="GalerieImagesContenant">
+    <div class="GalerieArticle">
+      <?php
+        // Cherche l'article intitulé 'Galerie Expo'
+        $galerie_post = get_page_by_title( 'Galerie Expo', OBJECT, 'post' );
 
-      <!-- NOTE: IL VA FALLOIR REMPLACER LES SRC PAR DES LIENS VERS LES MÉDIAS WORDPRESS UNE FOIS QU'ON LES AURA! -->
-        <div class="ImageItem Row-1-1">
-          <img src="https://picsum.photos/200/300" alt="Image gallerie 1">
-        </div>
-        <div class="ImageItem Row-1-2">
-          <img src="https://picsum.photos/200/300" alt="Image gallerie 0">
-        </div>
-        <div class="ImageItem Row-2-1-1">
-          <img src="https://picsum.photos/200/300" alt="Image gallerie 2">
-        </div>
-        <div class="ImageItem Row-2-1-2">
-          <img src="https://picsum.photos/200/300" alt="Image gallerie 3">
-        </div>
-        <div class="ImageItem Row-2-2">
-          <img src="https://picsum.photos/200/300" alt="Image gallerie 4">
-        </div>
-        <div class="ImageItem Row-2-3-1">
-          <img src="https://picsum.photos/200/300" alt="Image gallerie 5">
-        </div>
-        <div class="ImageItem Row-2-3-2">
-          <img src="https://picsum.photos/200/300" alt="Image gallerie 6">
-        </div>
-        <div class="ImageItem Row-3-1">
-          <img src="https://picsum.photos/200/300" alt="Image gallerie 7">
-        </div>
-        <div class="ImageItem Row-3-2">
-          <img src="https://picsum.photos/200/300" alt="Image gallerie 8">
-        </div>
-      </div>
+        if ( $galerie_post ) {
+          // Applique les filtres de contenu pour traiter shortcodes (gallery) et autres filtres
+          echo apply_filters( 'the_content', $galerie_post->post_content );
+        } else {
+          // Fallback : message et ancienne grille minimaliste
+          echo '<p>La galerie n\'a pas été trouvée. Assurez-vous qu\'un article nommé "Galerie Expo" existe.</p>';
+        }
+      ?>
+    </div>
   </section>
 
   <!-- FOOTER -->

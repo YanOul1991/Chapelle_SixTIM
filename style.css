@@ -180,6 +180,10 @@ li.project-gallery-list-item.projet-arcade .iconeAnnee{
     margin-top: 15%;
     margin-right: auto;
     padding: 1%;
+
+
+    position:relative;
+    z-index:5;
 }
 
 li.project-gallery-list-item.projet-affiches .iconeAnnee{
@@ -188,6 +192,10 @@ li.project-gallery-list-item.projet-affiches .iconeAnnee{
     margin-top: 15%;
     margin-right: auto;
     padding: 1%;
+
+
+    position:relative;
+    z-index:5;
 }
 
 li.project-gallery-list-item.projet-finissants .iconeAnnee{
@@ -196,6 +204,10 @@ li.project-gallery-list-item.projet-finissants .iconeAnnee{
     margin-top: 15%;
     margin-right: auto;
     padding: 1%;
+
+
+    position:relative;
+    z-index:5;
 }
 
 .informationProjet{
@@ -204,11 +216,17 @@ li.project-gallery-list-item.projet-finissants .iconeAnnee{
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+
+  position:relative;
+  z-index:2;
 }
 
 .iconeAnnee img{
   width: 80%;
   margin: 0 auto;
+
+  position:relative;
+  z-index:4;
 }
 
 
@@ -222,16 +240,37 @@ li.project-gallery-list-item{
   aspect-ratio: 1 / 1.6;
   border-radius: 8%;
 
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
 
+}
 
-  background-image: url("images/Affiche-jeu-Hachiman.jpg");
-  background-size: cover;
-  background-repeat:no-repeat;
+.categorie-image{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8%;
+}
 
+/* Espace autour de la galerie: évite que le contenu touche les bords de la page */
+#GalerieImagesContenant {
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+#GalerieImagesContenant .GalerieArticle {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 12px;
+  box-sizing: border-box;
 }
 
 li.project-gallery-list-item.projet-arcade:hover{
@@ -456,13 +495,13 @@ div#footer_a_propos {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  aspect-ratio: 2 / 3; /*Les images sont verticales*/
+  aspect-ratio: 2 / 2.5; /*Les images sont verticales*/
   border-radius: 8%;
 
   transition: 0.25s;
 }
 
-#Projet1Image:hover{
+/*#Projet1Image:hover{
     box-shadow: 2px 2px 20px 20px  rgb(255, 94, 0);
     width: 100%;
 }
@@ -473,11 +512,21 @@ div#footer_a_propos {
 #Projet3Image:hover{
     box-shadow: 2px 2px 20px 20px rgb(0, 64, 255);
     width: 100%;
+}*/
+#Projet1 .ProjetTitre {
+    color: rgb(255, 94, 0);
+}
+
+#Projet2 .ProjetTitre {
+    color: rgb(21, 255, 0);
+}
+
+#Projet3 .ProjetTitre {
+    color: rgb(0, 64, 255);
 }
 
 .ProjetImageContenant img{
   width: 100%;
-  height: 100%;
   object-fit: cover;
   display: block;
 }

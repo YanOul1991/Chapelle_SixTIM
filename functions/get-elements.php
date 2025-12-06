@@ -9,12 +9,24 @@
  */
 function get_nav($class_prefix)
 {
-  wp_nav_menu(array(
-    'menu' => 'nav',
-    'container' => 'nav',
-    'menu_class' => $class_prefix . '-menu-list',
-    'container_class' => $class_prefix . '-menu-container'
-  ));
+    wp_nav_menu(array(
+        'menu' => 'nav',
+        'container' => 'nav',
+        'menu_class' => $class_prefix . '-menu-list',
+        'container_class' => $class_prefix . '-menu-container'
+    ));
+}
+
+function get_nav_drop()
+{
+    $categories = get_categories();
+    $categorie_projets = get_cat_ID('projets');
+
+    foreach ($categories as $cat) : if ($cat->category_parent == $categorie_projets) : ?>
+        <a href="<?php echo get_category_link($cat->term_id) ?>"><?php echo $cat->name; ?></a>
+    <?php
+    endif;
+    endforeach;
 }
 
 /**
@@ -27,7 +39,7 @@ function get_project_card($class_prefix)
     // Récupérer la première catégorie du post
     $categories = get_the_category();
     $cat_slug = $categories ? $categories[0]->slug : '';
-    
+
     // Associer une image selon la catégorie
     switch ($cat_slug) {
         case 'arcade':
@@ -45,9 +57,19 @@ function get_project_card($class_prefix)
     }
     ?>
 
+    <?php
+      $thumb_url = get_the_post_thumbnail_url( get_the_ID(), 'full' );
+      if ( ! $thumb_url ) {
+        $thumb_url = 'https://placehold.co/50x100';
+      }
+    ?>
+
+
     <div class="iconeAnnee">
-        <img src="<?php echo esc_url( get_theme_file_uri( $image ) ); ?>" alt="Image Catégorie">
+        <img src="<?php echo esc_url(get_theme_file_uri($image)); ?>" alt="Image Catégorie">
     </div>
+
+    <img src="<?php echo esc_url( $thumb_url ); ?>" alt="Image Catégorie" class="categorie-image" />
 
     <div class="informationProjet">
         <h1 class="<?php echo $class_prefix; ?>-title"><?php the_title(); ?></h1>
