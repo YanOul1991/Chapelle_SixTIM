@@ -9,16 +9,13 @@
     <section id="ExplicationsContenant">
       <h2 class="ExplicationTitre">ExpoTIM</h2>
       <p id="ExplicationsTexte">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        ExpoTIM est une vitrine créative qui célèbre le talent et l'innovation des étudiants en Techniques d'intégration multimédia. Chaque année, nos étudiants repoussent les limites de la créativité en développant des projets qui allient design graphique, développement web, programmation de jeux vidéo et médias interactifs. Cette exposition met en lumière le travail acharné, la passion et les compétences techniques acquises tout au long de leur parcours académique. Explorez nos galeries pour découvrir des affiches innovantes, des jeux d'arcade captivants et les projets de finissants qui marquent l'aboutissement de leurs études.
       </p>
     </section>
 
   <!-- Partie les trois contenants de projets -->
     <section id="ProjetsContenant">
       <div id="Projet1" class="ProjetBox">
-        <div class="iconeAnnee">
-          <img src="/images/pinceau2.png" alt="Image Catégorie">
-        </div>
         <div id="Projet1Image" class="ProjetImageContenant">
           <img src="<?php echo get_template_directory_uri(); ?>/images/pinceau2.png" alt="Image Graphisme">
         </div>
@@ -46,9 +43,6 @@
         </div>
       </div>
       <div id="Projet2" class="ProjetBox">
-        <div class="iconeAnnee">
-          <img src="/images/manetteDeJeu.png" alt="Image Catégorie">
-        </div>
         <div id="Projet2Image" class="ProjetImageContenant">
          <img src="<?php echo get_template_directory_uri(); ?>/images/manetteDeJeu.png" alt="Image arcade">
         </div>
@@ -76,9 +70,6 @@
         </div>
       </div>
       <div id="Projet3" class="ProjetBox">
-        <div class="iconeAnnee">
-          <img src="/images/chapeauGraduation.png" alt="Image Catégorie">
-        </div>
         <div id="Projet3Image" class="ProjetImageContenant">
           <img src="<?php echo get_template_directory_uri(); ?>/images/chapeauGraduation.png" alt="Image finissant">
         </div>
