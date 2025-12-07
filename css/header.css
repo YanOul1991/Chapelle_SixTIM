@@ -46,8 +46,9 @@ img.custom-logo {
 /* ---- Liens nav ---- */
 nav.header-menu-container {
   position: absolute;
-  background: #484848;
+  background: rgb(0, 22, 119);
 
+  opacity: .95;
   width: 100%;
   height: 100vh;
   top: 0;

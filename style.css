@@ -246,7 +246,6 @@ li.project-gallery-list-item{
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-
 }
 
 .categorie-image{
@@ -287,6 +286,9 @@ li.project-gallery-list-item.projet-finissants:hover{
   /* width: 21.5%; */
 }
  
+li.project-gallery-list-item:hover .categorie-image{
+  opacity: 0.5;
+}
 
 h1.project-gallery-list-item-title{
   font-family: var(--texte-font-principal);
@@ -294,7 +296,7 @@ h1.project-gallery-list-item-title{
   font-size: 1.5rem;
   text-align: center;
  
-  transition: opacity 0.25s;
+  transition: 0.25s;
 }
 li.project-gallery-list-item:hover h1.project-gallery-list-item-title{
   opacity: 1;
@@ -304,7 +306,7 @@ li.project-gallery-list-item:hover h1.project-gallery-list-item-title{
  
 h1.project-gallery-list-item-title~a{
   opacity: 0;
-  transition: opacity 0.25s;
+  transition: 0.25s;
 }
  
 li.project-gallery-list-item:hover h1.project-gallery-list-item-title~a{
@@ -344,7 +346,8 @@ div#footer_complet {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #181818;
+  background-color: #01052f;
+  box-shadow: rgb(127 183 255 / 0%) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgb(0 48 149 / 4%) 0px 3px 3px -1.5px, rgb(7 62 179 / 4%) 0px 6px 6px -3px, rgb(8 71 153) 0px -12px 12px -6px, rgb(92 147 217) 0px -20px 24px -12px;
   color: white;
 }
 
