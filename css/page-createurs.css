@@ -22,7 +22,6 @@
 }
 
 .liste-createurs-item {
-  /* border: 2px dashed lime; */
   background: none;
   width: 90%;
 
@@ -45,7 +44,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    box-shadow: 0px 0px 5px 5px white;
+    box-shadow: rgb(8 71 153) 0px 0px 12px 8px, rgb(92 147 217) 0px 0px 0px 2px;
   }
 }
 
@@ -59,9 +58,7 @@
 
   >* {
     width: 100%;
-    /* border: 1px solid red; */
-    /* box-shadow: none; */
-    box-shadow: 5px 5px 5px 5px white;
+    box-shadow: rgb(8 71 153) 0px 0px 12px 8px, rgb(92 147 217) 0px 0px 0px 2px;
     padding: 5px;
 
   }
@@ -102,7 +99,9 @@
     .liste-createurs-item {
       width: 40%;
       max-height: 500px;
-       background: rgba(68, 68, 68, 0.5);
+      background: rgb(0, 0, 85,.5);
+      box-shadow:  rgb(8 71 153) 0px 0px 12px 8px, rgb(92 147 217) 0px 0px 0px 2px;
+
 
        * > {
         background: gray;
@@ -112,7 +111,6 @@
     .createur-image {
       order: 0;
       width: 50%;
-      aspect-ratio: auto;
       height: max-content;
       > img {
         box-shadow: none;
@@ -120,7 +118,6 @@
     }
 
     .createur-texte {
-      /* border: 1px dashed cyan; */
       width: 50%;
       height: 100%;
     }

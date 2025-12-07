@@ -46,8 +46,9 @@ img.custom-logo {
 /* ---- Liens nav ---- */
 nav.header-menu-container {
   position: absolute;
-  background: #484848;
+  background: rgb(0, 22, 119);
 
+  opacity: .95;
   width: 100%;
   height: 100vh;
   top: 0;
@@ -91,6 +92,7 @@ ul.header-menu-list li.menu-item{
     transition: .25s;
   }
 }
+/* code fonctionnel sur mon local (Nouhou) */
 #menu-item-371 a:hover{
   color: rgb(0, 64, 255);
 }
@@ -98,6 +100,16 @@ ul.header-menu-list li.menu-item{
   color: rgb(21, 255, 0);
 }
 #menu-item-360 a:hover{
+  color: rgb(255, 94, 0);
+}
+/* code fonctionnel sur le distant */
+#menu-item-350 a:hover{
+  color: rgb(0, 64, 255);
+}
+#menu-item-349 a:hover{
+  color: rgb(21, 255, 0);
+}
+#menu-item-348 a:hover{
   color: rgb(255, 94, 0);
 }
 
