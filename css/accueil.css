@@ -56,6 +56,7 @@
 .accueil-projets-clique {
   position: relative;
   width: 100%;
+  height: max-content;
 
   display: flex;
   flex-flow: column nowrap;
@@ -72,12 +73,18 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.accueil-projets-visuel > img {
-  display: block;
+.accueil-projet-visuel-container {
   width: 30%;
+  aspect-ratio: 9 / 16;
+}
+
+.accueil-projet-visuel-container > img {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover; 
 }
 
@@ -227,6 +234,7 @@
   .accueil-projets-clique {
     
     width: 100%;
+    max-width: 1000px;
     height: auto;
     padding: 0;
     margin: 0;
@@ -236,16 +244,18 @@
   .accueil-projets-visuel {
     display: flex;
     width:100%;
-    height: 20rem;
+    /* height: 20rem; */
     aspect-ratio: auto;
     flex-flow: row nowrap;
     justify-content: center;
 
-    > img {
+    /* > img {
       width: 33%;
-      height: auto;
+      height: 100%;
+      aspect-ratio: 9 / 16;
       border: black solid 1px;
-    }
+      object-fit: contain;
+    } */
   }
 
   .accueil-projets-description {
