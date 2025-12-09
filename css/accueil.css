@@ -243,7 +243,10 @@
     > img {
       width: 100%;
       height: auto;
-      border: black solid 1px;
+      transition: 0.2s;
+    }
+    > img:hover {
+      transform: scale(1.05);
     }
   }
 
