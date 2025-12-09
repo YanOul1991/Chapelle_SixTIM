@@ -23,9 +23,15 @@
     if ($catProjets) : ?>
         <a class="accueil-projets-clique" href="<?php echo get_category_link($catProjets->term_id) ?>">
           <div class="accueil-projets-visuel">
-            <img src="<?php echo get_template_directory_uri() . '/images/accueil_tous_1.png'; ?>" alt="Visuel tout les projets">
-            <img src="<?php echo get_template_directory_uri() . '/images/accueil_tous_2.png'; ?>" alt="Visuel tout les projets">
-            <img src="<?php echo get_template_directory_uri() . '/images/accueil_tous_3.jpg'; ?>" alt="Visuel tout les projets">
+            <div class="accueil-projet-visuel-container">
+              <img src="<?php echo get_template_directory_uri() . '/images/accueil_tous_1.png'; ?>" alt="Visuel tout les projets">
+            </div>
+            <div class="accueil-projet-visuel-container">
+              <img src="<?php echo get_template_directory_uri() . '/images/accueil_tous_2.png'; ?>" alt="Visuel tout les projets">
+            </div>
+            <div class="accueil-projet-visuel-container">
+              <img src="<?php echo get_template_directory_uri() . '/images/accueil_tous_3.jpg'; ?>" alt="Visuel tout les projets">
+            </div>
           </div>
           <div class="accueil-projets-description">
             <h2 class="accueil-projets-description-titre"><?php echo $catProjets->name ?></h2>
@@ -54,9 +60,15 @@
         ?>
         <a class="accueil-projets-clique" href="<?php echo get_category_link($cat->term_id) ?>">
           <div class="accueil-projets-visuel">
-            <img src="<?php echo get_template_directory_uri() . '/images/' . $img1; ?>" alt="Visuel tout les projets">
-            <img src="<?php echo get_template_directory_uri() . '/images/' . $img2; ?>" alt="Visuel tout les projets">
-            <img src="<?php echo get_template_directory_uri() . '/images/' . $img3; ?>" alt="Visuel tout les projets">
+            <div class="accueil-projet-visuel-container">
+              <img src="<?php echo get_template_directory_uri() . '/images/' . $img1; ?>" alt="Visuel tout les projets">
+            </div>
+            <div class="accueil-projet-visuel-container">
+              <img src="<?php echo get_template_directory_uri() . '/images/' . $img2; ?>" alt="Visuel tout les projets">
+            </div>
+            <div class="accueil-projet-visuel-container">
+              <img src="<?php echo get_template_directory_uri() . '/images/' . $img3; ?>" alt="Visuel tout les projets">
+            </div>
           </div>
           <div class="accueil-projets-description">
             <section class="michel">
