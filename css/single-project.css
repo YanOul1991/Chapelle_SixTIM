@@ -80,25 +80,50 @@
   .single-project-titre{
     grid-column: 1 / 6;
     grid-row: 1 / 4;
+    transition: .2s;
+  }
+
+  .single-project-titre:hover{
+    scale: 1.05;
   }
 
   .single-project-type {
     grid-column: 6 / 11;
     grid-row: 1 / 4;
+    transition: .2s;
+  }
+
+    .single-project-type:hover{
+    scale: 1.05;
   }
 
   .single-project-thumbnail{
     grid-column: 1 / 6;
     grid-row: 4 / 21;
+    transition: .2s;
+  }
+
+    .single-project-thumbnail:hover{
+    scale: 1.05;
   }
 
   .single-project-membres {
     grid-column: 6 / 11;
     grid-row: 4 / 11;
+    transition: .2s;
+  }
+
+    .single-project-membres:hover{
+    scale: 1.05;
   }
 
   .single-project-description {
     grid-column: 6 / 11;
     grid-row: 11 / 21;
+    transition: .2s;
+  }
+
+    .single-project-description:hover{
+    scale: 1.05;
   }
 }

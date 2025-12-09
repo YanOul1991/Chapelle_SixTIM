@@ -70,6 +70,7 @@ body{
   flex-flow: column nowrap;
 
   min-height: 100vh;
+  cursor: url("images/cursor2.png"), auto;
 }
 
 main{
