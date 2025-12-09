@@ -46,6 +46,9 @@
   padding: 10px;
 }
 
+.single-project-description {
+    font-family: var(--texte-font-secondaire);
+}
 /*
   Style pour les grands ecrans
 */
