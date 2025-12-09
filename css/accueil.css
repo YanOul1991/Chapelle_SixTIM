@@ -55,7 +55,8 @@
 
 .accueil-projets-clique {
   position: relative;
-  width: 100%;
+  width: 80%;
+  padding: 10px 0;
 
   display: flex;
   flex-flow: column nowrap;
@@ -66,29 +67,32 @@
 }
 
 .accueil-projets-visuel {
-  position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
 }
 
 .accueil-projets-visuel > img {
   display: block;
-  width: 30%;
-  object-fit: cover; 
+  width:33%;
+
 }
 
 .accueil-projets-description {
-    position: absolute;
-    bottom: 0;
-    width: 90%;
-    padding:10px;
-    background: black;
-}
+  /* width: 80%;
 
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
+  padding: 25px 50px;
+
+  border-radius: 100px; */
+  /* display: none; */ 
+  
+}
 .accueil-projets-description,
 .accueil-projets-description--wrapper {
   clip-path: polygon(0px calc(100% - 15px),
@@ -147,7 +151,6 @@
     10px calc(100% - 15px),
     5px calc(100% - 15px));
 }
-
 .accueil-projets-description::after,
 .accueil-projets-description--wrapper::after {
   content: "";
@@ -204,7 +207,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background:linear-gradient(120deg, rgb(255, 94, 0) 27%, rgb(21, 255, 0) 33%,rgb(21, 255, 0) 66%, rgb(0, 64, 255)75% );
+  background:linear-gradient(120deg, rgb(255, 94, 0) 27%, rgb(21, 255, 0) 33%,rgb(21, 255, 0) 66%, rgb(0, 64, 255)75%);
   display: block;
   pointer-events: none;
 }
@@ -250,8 +253,10 @@
 
   .accueil-projets-description {
     position: absolute;
+    background: black;
     bottom: 15px;
     width: 90%;
     padding:10px;
+
   }
 }
