@@ -83,6 +83,21 @@
   align-items: center;
 }
 
+
+.wp-block-social-links{
+  margin-top:10%;
+  width:100%;
+  gap: 10px;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wp-social-link{
+  width:15%;
+}
+
 @media screen and (min-width: 993px) {
   .createur-image {
       justify-content: center;
