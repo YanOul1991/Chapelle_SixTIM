@@ -408,11 +408,12 @@ div#footer_social_contenant {
   justify-content: center;
   align-items: center;
 
+  padding-top:10px;
   gap: 10px;
 }
 
 .footer_social{
-   width:10%;
+   width:5%;
 }
 
 .footer_social_img{
