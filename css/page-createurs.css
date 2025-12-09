@@ -111,6 +111,7 @@
     .createur-image {
       order: 0;
       width: 50%;
+      max-width: 300px;
       height: max-content;
       > img {
         box-shadow: none;
