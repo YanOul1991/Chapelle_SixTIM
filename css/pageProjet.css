@@ -16,3 +16,7 @@ p{
 .iconeAnnee{
     background-color: rgb(0,71,213);
 }
+
+.project-gallery-list {
+    width: 100%;
+}
