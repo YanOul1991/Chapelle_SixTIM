@@ -43,6 +43,7 @@ ul{
 a{
   text-decoration: none;
   color: white;
+  cursor: url("images/cursorClick.png"), pointer;
 }
 
 header a{
@@ -70,6 +71,7 @@ body{
   flex-flow: column nowrap;
 
   min-height: 100vh;
+  cursor: url("images/cursor.png"), auto;
 }
 
 main{
@@ -245,6 +247,7 @@ li.project-gallery-list-item{
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
+  cursor: url("images/cursorSmall.png"), auto;
 }
 
 @media screen and (min-width: 993px) {
@@ -420,17 +423,19 @@ div#footer_social_contenant {
   justify-content: center;
   align-items: center;
 
+  padding-top:10px;
   gap: 10px;
 }
 
 .footer_social{
-   width:10%;
+   width:5%;
 }
 
 .footer_social_img{
   width:100%;
   height:100%;
 }
+
 
 div#footer_legal_contenant {
   /* border: 2px dashed yellow; */
@@ -472,6 +477,11 @@ div#footer_a_propos {
 .ExplicationTitre{
   text-align: center;
   font-size: 2.25rem;
+  padding-bottom: 1rem;
+}
+
+#ExplicationsTexte{
+  font-size: 1.25rem;
 }
 
 #ExplicationsContenant {
@@ -503,7 +513,7 @@ div#footer_a_propos {
 }
 
 .ProjetImageContenant{
-  width: 90%;
+  width: 60%;
   box-sizing: border-box;
   /* border: 2px solid rgba(0,0,0,0.12); */
   display: flex;

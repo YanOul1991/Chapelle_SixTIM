@@ -17,6 +17,23 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+}
+
+header > div.main-logo {
+  flex: 0 0 auto;
+  order: 1;
+}
+
+header > nav.header-menu-container {
+  flex: 1 1 auto;
+  order: 2;
+}
+
+header > button.music-mute-btn {
+  flex: 0 0 auto;
+  order: 3;
+  margin-right: 10px;
 }
 
 /* 
@@ -113,6 +130,34 @@ ul.header-menu-list li.menu-item{
   color: rgb(255, 94, 0);
 }
 
+/* ---- Bouton Music Mute ---- */
+
+.music-mute-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.music-mute-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.music-mute-btn svg {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+}
+
+.music-mute-btn.muted svg {
+  opacity: 0.5;
+}
+
 /* ---- Bouton Burger ---- */
 
 #btn-burger-check {
@@ -152,10 +197,14 @@ ul.header-menu-list li.menu-item{
 @media screen and (min-width: 993px) {
   header {
     height: 80px;
+    justify-content: flex-start;
+    gap: 0;
   }
 
   div.main-logo {
     width: 175px;
+    flex: 0 0 auto;
+    order: 1;
   }
 
   #btn-burger-label {
@@ -167,13 +216,21 @@ ul.header-menu-list li.menu-item{
     width: auto;
     height: auto;
     background: none;
+    flex: 1 1 auto;
+    order: 2;
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 
     translate: 0 0;
+  }
+
+  .music-mute-btn {
+    flex: 0 0 auto;
+    order: 3;
+    margin-right: 10px;
   }
 
   ul.header-menu-list {

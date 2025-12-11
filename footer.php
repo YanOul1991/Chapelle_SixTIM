@@ -69,7 +69,7 @@ if ( function_exists('has_custom_logo') && has_custom_logo() ) {
 
   <div id="footer_a_propos"> <!-- À propos --> 
     <h3>À propos de l'exposition</h3>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium tempora optio, vel, mollitia impedit dolore ratione ut nobis nisi quas quibusdam? Eveniet perspiciatis tempora fugit ab veniam officiis, tenetur labore.</p>
+    <p>La vitrine de l'exposition du TIM sert à mettre en avant les projets des élèves en Techniques d'intégration multimédia.</p>
   </div>
 
 </div>
