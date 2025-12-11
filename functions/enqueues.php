@@ -26,3 +26,33 @@ function theme_sixtim_enqueue_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'theme_sixtim_enqueue_styles');
+
+/**
+ * Enqueue music mute button JavaScript
+ */
+function theme_sixtim_enqueue_scripts() {
+  $music_mute_file = get_template_directory() . '/js/music-mute-button.js';
+  if (file_exists($music_mute_file)) {
+    wp_enqueue_script(
+      'theme-music-mute-button',
+      get_template_directory_uri() . '/js/music-mute-button.js',
+      array(),
+      filemtime($music_mute_file),
+      true // Load in footer
+    );
+  }
+
+  $interactive_sounds_file = get_template_directory() . '/js/interactive-sounds.js';
+  if (file_exists($interactive_sounds_file)) {
+    wp_enqueue_script(
+      'theme-interactive-sounds',
+      get_template_directory_uri() . '/js/interactive-sounds.js',
+      array(),
+      filemtime($interactive_sounds_file),
+      true // Load in footer
+    );
+  }
+}
+
+add_action('wp_enqueue_scripts', 'theme_sixtim_enqueue_scripts');
+
